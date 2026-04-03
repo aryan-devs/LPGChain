@@ -1,0 +1,1 @@
+-- LPGChain Database Schema
