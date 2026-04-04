@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - LPGChain</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Total Distributors</h3>
+        <p>12</p>
+      </div>
+      <div class="card">
+        <h3>Total Cylinders Allocated</h3>
+        <p>5000</p>
+      </div>
+      <div class="card">
+        <h3>Fraud Alerts</h3>
+        <p>2</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Add Distributor</h2>
+      <input type="text" placeholder="Distributor Name">
+      <input type="text" placeholder="Area">
+      <input type="text" placeholder="Contact Number">
+      <button>Add Distributor</button>
+    </div>
+
+    <div class="section">
+      <h2>Allocate LPG Stock</h2>
+      <select>
+        <option>Select Distributor</option>
+        <option>Distributor A</option>
+        <option>Distributor B</option>
+      </select>
+      <input type="number" placeholder="Number of Cylinders">
+      <button>Allocate Stock</button>
+    </div>
+
+    <div class="section">
+      <h2>Recent Transactions</h2>
+      <table>
+        <tr>
+          <th>Transaction</th>
+          <th>Quantity</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>Company → Distributor A</td>
+          <td>500</td>
+          <td>10:30 AM</td>
+        </tr>
+        <tr>
+          <td>Company → Distributor B</td>
+          <td>300</td>
+          <td>11:15 AM</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
