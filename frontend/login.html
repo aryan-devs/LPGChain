@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LPGChain Login</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>LPGChain Login Page</h1>
+  <div class="container">
+    <div class="login-box">
+      <h1>LPGChain</h1>
+      <p>Transparent LPG Distribution System</p>
+
+      <form>
+        <input type="email" placeholder="Enter Email" required />
+        <input type="password" placeholder="Enter Password" required />
+
+        <select required>
+          <option value="">Select Role</option>
+          <option value="admin">Admin</option>
+          <option value="distributor">Distributor</option>
+          <option value="customer">Customer</option>
+        </select>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
