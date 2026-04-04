@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Register - LPGChain</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1>Create Customer Account</h1>
+      <p>Register to book LPG and track delivery</p>
+
+      <form onsubmit="handleRegister(event)">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <div style="position: relative;">
+  <input 
+    type="password" 
+    id="password" 
+    placeholder="Password" 
+    required 
+    style="width: 100%; padding-right: 50px;"
+    oncopy="return false" 
+    oncut="return false" 
+    onpaste="return false"
+  />
+  <span onclick="togglePassword('password')" 
+        style="position: absolute; right: 15px; top: 14px; cursor: pointer;">
+        👁️
+  </span>
+</div>
+
+<div style="position: relative;">
+  <input 
+    type="password" 
+    id="confirmPassword" 
+    placeholder="Confirm Password" 
+    required 
+    style="width: 100%; padding-right: 50px;"
+    oncopy="return false" 
+    oncut="return false" 
+    onpaste="return false"
+  />
+  <span onclick="togglePassword('confirmPassword')" 
+        style="position: absolute; right: 15px; top: 14px; cursor: pointer;">
+        👁️
+  </span>
+</div>
+        <input type="text" id="area" placeholder="Area / Address" required />
+
+        <button type="submit">Create Account</button>
+      </form>
+
+      <p style="margin-top: 15px; font-size: 14px;">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function handleRegister(event) {
+      event.preventDefault();
+
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+
+      alert("Customer account created successfully! (Backend will save this later)");
+      window.location.href = "login.html";
+    }
+
+    function togglePassword(fieldId) {
+  const field = document.getElementById(fieldId);
+  field.type = field.type === "password" ? "text" : "password";
+}
+  </script>
+</body>
+</html>

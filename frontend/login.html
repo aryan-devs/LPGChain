@@ -13,37 +13,60 @@
       <p>Transparent LPG Distribution System</p>
 
       <form onsubmit="handleLogin(event)">
-  <input type="email" placeholder="Enter Email" required />
-  <input type="password" placeholder="Enter Password" required />
+        <input type="email" placeholder="Enter Email" required />
+<div style="position: relative;">
+  <input 
+    type="password" 
+    id="loginPassword" 
+    placeholder="Enter Password" 
+    required 
+    style="width: 100%; padding-right: 50px;"
+    oncopy="return false" 
+    oncut="return false" 
+    onpaste="return false"
+  />
+  <span onclick="toggleLoginPassword()" 
+        style="position: absolute; right: 15px; top: 14px; cursor: pointer;">
+        👁️
+  </span>
+</div>
+        <select id="role" required>
+          <option value="">Select Role</option>
+          <option value="admin">Admin</option>
+          <option value="distributor">Distributor</option>
+          <option value="customer">Customer</option>
+        </select>
 
-  <select id="role" required>
-    <option value="">Select Role</option>
-    <option value="admin">Admin</option>
-    <option value="distributor">Distributor</option>
-    <option value="customer">Customer</option>
-  </select>
+        <button type="submit">Login</button>
+      </form>
 
-  <button type="submit">Login</button>
-</form>
-
-<script>
-function handleLogin(event) {
-  event.preventDefault();
-
-  const role = document.getElementById("role").value;
-
-  if (role === "admin") {
-    window.location.href = "admin.html";
-  } else if (role === "distributor") {
-    window.location.href = "distributor.html";
-  } else if (role === "customer") {
-    window.location.href = "customer.html";
-  } else {
-    alert("Please select a role");
-  }
-}
-</script>
+      <p style="margin-top: 15px; font-size: 14px;">
+        New Customer? <a href="register.html">Create Account</a>
+      </p>
     </div>
   </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+
+      const role = document.getElementById("role").value;
+
+      if (role === "admin") {
+        window.location.href = "admin.html";
+      } else if (role === "distributor") {
+        window.location.href = "distributor.html";
+      } else if (role === "customer") {
+        window.location.href = "customer.html";
+      } else {
+        alert("Please select a role");
+      }
+    }
+
+    function toggleLoginPassword() {
+  const passwordField = document.getElementById("loginPassword");
+  passwordField.type = passwordField.type === "password" ? "text" : "password";
+}
+  </script>
 </body>
 </html>
