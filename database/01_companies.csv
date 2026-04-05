@@ -1,0 +1,4 @@
+company_id,company_name,brand,warehouse_location,total_cylinder_stock,authorized_distributors_count,contact_email,contact_phone
+COMP001,Indian Oil Corporation Ltd (IOCL),IndaneGas,"Hadapsar Industrial Estate, Pune 411013",850000,18,lpg.pune@iocl.co.in,02026123456
+COMP002,Hindustan Petroleum Corporation Ltd (HPCL),HP Gas,"Pimpri Industrial Area, Pune 411018",420000,4,hpgas.pune@hpcl.co.in,02027654321
+COMP003,Bharat Petroleum Corporation Ltd (BPCL),Bharat Gas,"Chakan MIDC, Pune 410501",310000,3,bharatgas.pune@bpcl.co.in,02020987654

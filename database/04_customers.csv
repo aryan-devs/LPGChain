@@ -1,0 +1,501 @@
+customer_id,name,mobile_number,address,area_id,area_name,linked_distributor_id,connection_number,cylinder_type,subsidy_status,last_delivery_date,avg_cylinders_per_month,booking_frequency_days
+CUST00001,Sunita Pawar,9679064766,"Flat 7, Ganesh Park, Baner, Pune",AREA018,Baner,DIST018,PNE3770370,47.5kg Industrial,Surrendered,2025-12-13,1.0,30
+CUST00002,Sneha Bhosale,9341266931,"Flat 3, Ganesh Apts, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE8574680,14.2kg Domestic,Active,2026-02-07,1.7,18
+CUST00003,Amit Deshmukh,9454794895,"Flat 3, Om Heights, Khadki, Pune",AREA001,Khadki,DIST001,PNE2191066,14.2kg Domestic,Active,2025-11-17,1.1,27
+CUST00004,Rekha Waghmare,9967043303,"Flat 14, Sai Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE8930103,14.2kg Domestic,Active,2025-12-17,1.0,30
+CUST00005,Ashok More,9165082363,"Flat 13, Ganesh Apts, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE8835373,14.2kg Domestic,Active,2025-12-11,1.2,25
+CUST00006,Pooja Sawant,9596743109,"Flat 8, Shree Park, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE8077999,5kg FTL,Not Eligible,2026-03-10,1.0,30
+CUST00007,Mangal Bhosale,9278575192,"Flat 14, Laxmi Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE1247595,14.2kg Domestic,Active,2026-03-20,1.8,17
+CUST00008,Rahul Deshpande,9384759615,"Flat 15, Ganesh Park, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE7358113,5kg FTL,Surrendered,2025-11-13,1.0,30
+CUST00009,Priya Nikam,9889991777,"Flat 18, Shree Residency, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE9164991,14.2kg Domestic,Surrendered,2025-11-27,1.2,25
+CUST00010,Priya Salve,9186019028,"Flat 6, Shree Apts, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE3641282,5kg FTL,Active,2026-03-05,1.3,23
+CUST00011,Amit Joshi,9805849060,"Flat 19, Om Residency, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE5130808,19kg Commercial,Active,2026-01-14,1.0,30
+CUST00012,Rajesh Jadhav,9821221887,"Flat 10, Laxmi Residency, Dighi, Pune",AREA008,Dighi,DIST008,PNE5456272,19kg Commercial,Not Eligible,2026-04-02,1.1,27
+CUST00013,Anil Jadhav,9474745382,"Flat 3, Sai Residency, Katraj, Pune",AREA015,Katraj,DIST015,PNE2677407,14.2kg Domestic,Active,2025-11-16,1.3,23
+CUST00014,Archana Salve,9108399996,"Flat 18, Ganesh Apts, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE6075395,19kg Commercial,Active,2026-03-06,1.2,25
+CUST00015,Dinesh Mane,9318610946,"Flat 9, Om Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE3607983,14.2kg Domestic,Not Eligible,2026-03-22,1.0,30
+CUST00016,Shivaji Sawant,9147337803,"Flat 1, Ganesh Heights, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE8106422,14.2kg Domestic,Active,2025-12-12,1.5,20
+CUST00017,Ganesh Jadhav,9685823118,"Flat 2, Ganesh Heights, Baner, Pune",AREA018,Baner,DIST018,PNE8175395,14.2kg Domestic,Active,2026-01-01,1.0,30
+CUST00018,Suresh Bhosale,9816114302,"Flat 4, Ganesh Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE7003042,47.5kg Industrial,Surrendered,2026-02-03,1.0,30
+CUST00019,Sarita Mane,9940081098,"Flat 14, Sai Residency, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE3970445,14.2kg Domestic,Surrendered,2025-12-28,1.1,27
+CUST00020,Rekha Pawar,9976803188,"Flat 15, Ganesh Residency, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE8896868,5kg FTL,Not Eligible,2026-02-06,1.1,27
+CUST00021,Amit Sawant,9477040284,"Flat 17, Laxmi Residency, Khadki, Pune",AREA001,Khadki,DIST001,PNE4240180,19kg Commercial,Active,2026-01-28,0.9,33
+CUST00022,Priya More,9740563507,"Flat 14, Ganesh Residency, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE5453786,14.2kg Domestic,Not Eligible,2026-03-06,1.2,25
+CUST00023,Rahul Salve,9965984448,"Flat 18, Sai Residency, Wakad, Pune",AREA013,Wakad,DIST013,PNE4188992,14.2kg Domestic,Not Eligible,2026-01-10,1.1,27
+CUST00024,Lata More,9872830248,"Flat 10, Om Residency, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE6266630,5kg FTL,Active,2025-10-08,1.6,19
+CUST00025,Rajesh Shinde,9760904107,"Flat 19, Ganesh Park, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE3135534,14.2kg Domestic,Active,2026-01-21,1.3,23
+CUST00026,Varsha Nikam,9751397897,"Flat 11, Laxmi Park, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE8212326,14.2kg Domestic,Active,2025-12-04,1.5,20
+CUST00027,Lata Rane,9459905654,"Flat 3, Sai Residency, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE3846949,14.2kg Domestic,Active,2026-03-29,1.0,30
+CUST00028,Anita Rane,9925159146,"Flat 3, Laxmi Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE5107776,19kg Commercial,Surrendered,2025-10-08,0.9,33
+CUST00029,Dinesh Patil,9906341966,"Flat 4, Laxmi Heights, Wakad, Pune",AREA013,Wakad,DIST013,PNE9294272,14.2kg Domestic,Not Eligible,2025-11-23,1.0,30
+CUST00030,Meena Bhosale,9230307805,"Flat 15, Sai Park, Katraj, Pune",AREA015,Katraj,DIST015,PNE1842524,5kg FTL,Not Eligible,2025-11-03,1.2,25
+CUST00031,Ravi Joshi,9991816852,"Flat 18, Laxmi Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE8425149,5kg FTL,Active,2026-01-28,0.7,43
+CUST00032,Shivaji Sawant,9922286180,"Flat 17, Laxmi Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE5147994,14.2kg Domestic,Active,2026-01-21,0.8,38
+CUST00033,Amit Jadhav,9261953189,"Flat 8, Laxmi Heights, Dighi, Pune",AREA008,Dighi,DIST008,PNE5558623,5kg FTL,Active,2025-12-21,0.8,38
+CUST00034,Sunita Deshmukh,9322086735,"Flat 14, Laxmi Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE8816912,19kg Commercial,Surrendered,2025-12-28,1.6,19
+CUST00035,Rajesh Joshi,9677909930,"Flat 18, Om Heights, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE1098919,14.2kg Domestic,Active,2025-12-01,1.3,23
+CUST00036,Sanjay Deshpande,9877583839,"Flat 6, Laxmi Heights, Khadki, Pune",AREA001,Khadki,DIST001,PNE7523941,47.5kg Industrial,Active,2025-12-25,1.0,30
+CUST00037,Mangal Kale,9295130056,"Flat 2, Ganesh Park, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE1454696,14.2kg Domestic,Active,2026-01-08,1.4,21
+CUST00038,Anil Joshi,9370874491,"Flat 3, Laxmi Apts, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE7360682,5kg FTL,Active,2026-01-05,1.3,23
+CUST00039,Pramod Patil,9365518424,"Flat 7, Shree Heights, Dighi, Pune",AREA008,Dighi,DIST008,PNE2151225,14.2kg Domestic,Active,2026-03-06,1.2,25
+CUST00040,Manoj Sawant,9923450567,"Flat 12, Sai Apts, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE4656838,5kg FTL,Active,2026-01-15,0.7,43
+CUST00041,Uma Deshpande,9525904456,"Flat 7, Shree Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE1430812,14.2kg Domestic,Surrendered,2025-10-11,1.5,20
+CUST00042,Varsha Nikam,9940348305,"Flat 2, Ganesh Park, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE3030966,5kg FTL,Active,2025-10-21,0.9,33
+CUST00043,Sneha Joshi,9488896443,"Flat 15, Sai Park, Aundh, Pune",AREA011,Aundh,DIST011,PNE1212267,14.2kg Domestic,Active,2025-10-20,1.4,21
+CUST00044,Manoj Joshi,9986625773,"Flat 19, Ganesh Residency, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE9111742,19kg Commercial,Not Eligible,2026-03-13,0.6,50
+CUST00045,Archana Deshpande,9461203124,"Flat 1, Laxmi Residency, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE8563202,14.2kg Domestic,Active,2026-01-28,1.1,27
+CUST00046,Ganesh Rane,9852890318,"Flat 9, Om Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE5691890,14.2kg Domestic,Active,2026-02-02,1.4,21
+CUST00047,Dinesh Waghmare,9793532952,"Flat 16, Laxmi Apts, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE7818732,14.2kg Domestic,Active,2025-10-09,0.6,50
+CUST00048,Lata Nikam,9496232693,"Flat 16, Om Residency, Dighi, Pune",AREA008,Dighi,DIST008,PNE6137284,14.2kg Domestic,Surrendered,2026-01-10,1.1,27
+CUST00049,Sneha Pawar,9438817025,"Flat 4, Om Heights, Paud, Pune",AREA012,Paud,DIST012,PNE8612582,14.2kg Domestic,Surrendered,2026-01-24,1.1,27
+CUST00050,Archana Gaikwad,9207939087,"Flat 7, Ganesh Heights, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE9801946,14.2kg Domestic,Active,2025-11-19,1.3,23
+CUST00051,Kavita Jadhav,9784907325,"Flat 16, Shree Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE5602180,14.2kg Domestic,Active,2025-12-13,1.2,25
+CUST00052,Priya Sawant,9612957813,"Flat 4, Shree Park, Aundh, Pune",AREA011,Aundh,DIST011,PNE4093109,14.2kg Domestic,Surrendered,2025-10-11,1.1,27
+CUST00053,Kavita Kulkarni,9366493008,"Flat 4, Om Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE3545556,14.2kg Domestic,Surrendered,2026-02-06,1.3,23
+CUST00054,Rajesh Kale,9575368059,"Flat 10, Om Park, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE9767312,14.2kg Domestic,Surrendered,2025-10-30,1.4,21
+CUST00055,Suresh Sawant,9809129316,"Flat 3, Sai Heights, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE2664863,14.2kg Domestic,Active,2026-04-04,1.3,23
+CUST00056,Dinesh Rane,9604564682,"Flat 10, Shree Heights, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE8558197,14.2kg Domestic,Active,2025-12-09,1.0,30
+CUST00057,Ashok Nikam,9809939880,"Flat 7, Laxmi Apts, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE4916201,14.2kg Domestic,Surrendered,2026-01-26,1.6,19
+CUST00058,Priya Shinde,9951078441,"Flat 10, Om Residency, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE2198058,14.2kg Domestic,Active,2026-01-17,0.9,33
+CUST00059,Anita Kale,9186373782,"Flat 20, Shree Park, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE7752972,5kg FTL,Surrendered,2026-03-29,1.4,21
+CUST00060,Lata Nikam,9730418447,"Flat 1, Ganesh Apts, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE4840714,5kg FTL,Active,2025-11-23,1.0,30
+CUST00061,Nitin Joshi,9781594897,"Flat 16, Shree Park, Deccan, Pune",AREA021,Deccan,DIST021,PNE8419378,14.2kg Domestic,Active,2025-10-15,1.3,23
+CUST00062,Sanjay Joshi,9844826434,"Flat 16, Ganesh Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE3698193,5kg FTL,Surrendered,2025-12-09,1.0,30
+CUST00063,Pramod Deshpande,9652543518,"Flat 1, Om Park, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE6276722,14.2kg Domestic,Active,2026-01-02,1.1,27
+CUST00064,Ashok Kale,9916033628,"Flat 2, Sai Residency, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE9363326,14.2kg Domestic,Not Eligible,2025-12-13,1.2,25
+CUST00065,Archana Bhosale,9862123506,"Flat 6, Ganesh Apts, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE9132114,14.2kg Domestic,Active,2026-03-06,1.7,18
+CUST00066,Ashok Jadhav,9635126623,"Flat 10, Om Residency, Katraj, Pune",AREA015,Katraj,DIST015,PNE2970754,14.2kg Domestic,Active,2025-12-05,1.7,18
+CUST00067,Uma Rane,9645719501,"Flat 5, Shree Residency, Dighi, Pune",AREA008,Dighi,DIST008,PNE8663605,5kg FTL,Not Eligible,2026-01-07,0.8,38
+CUST00068,Shivaji Patil,9403696046,"Flat 10, Om Park, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE5482413,19kg Commercial,Active,2025-12-02,1.0,30
+CUST00069,Manoj Mane,9302563940,"Flat 8, Om Park, Paud, Pune",AREA012,Paud,DIST012,PNE6577416,14.2kg Domestic,Surrendered,2026-03-24,0.7,43
+CUST00070,Dinesh Deshpande,9514548900,"Flat 5, Laxmi Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE8935224,14.2kg Domestic,Not Eligible,2026-01-10,1.0,30
+CUST00071,Rahul Jadhav,9540211187,"Flat 5, Shree Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE8387112,5kg FTL,Active,2025-10-27,1.6,19
+CUST00072,Ashok Kulkarni,9452794611,"Flat 18, Laxmi Residency, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE7668663,14.2kg Domestic,Not Eligible,2025-12-01,1.5,20
+CUST00073,Lata Gaikwad,9344261532,"Flat 3, Laxmi Apts, Baner, Pune",AREA018,Baner,DIST018,PNE1602286,5kg FTL,Surrendered,2026-03-10,0.9,33
+CUST00074,Dinesh Gaikwad,9131081879,"Flat 2, Ganesh Apts, Katraj, Pune",AREA015,Katraj,DIST015,PNE3791137,14.2kg Domestic,Active,2026-02-26,1.0,30
+CUST00075,Pooja Shinde,9287979290,"Flat 3, Om Park, Dighi, Pune",AREA008,Dighi,DIST008,PNE9911492,14.2kg Domestic,Active,2025-11-06,0.7,43
+CUST00076,Manoj Sawant,9593460064,"Flat 9, Shree Park, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE4895475,19kg Commercial,Surrendered,2026-02-23,1.3,23
+CUST00077,Kavita Joshi,9841218491,"Flat 9, Laxmi Residency, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE8410995,14.2kg Domestic,Active,2025-12-02,1.9,16
+CUST00078,Rajesh Nikam,9485429460,"Flat 19, Ganesh Residency, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE4979651,14.2kg Domestic,Not Eligible,2025-12-24,0.8,38
+CUST00079,Sarita Deshmukh,9751124015,"Flat 16, Ganesh Heights, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE1135861,14.2kg Domestic,Active,2025-10-24,0.7,43
+CUST00080,Lata Jadhav,9774576271,"Flat 4, Shree Residency, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE5204819,5kg FTL,Active,2026-01-01,0.9,33
+CUST00081,Sarita Joshi,9288592093,"Flat 7, Sai Residency, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE3204724,14.2kg Domestic,Not Eligible,2026-02-21,1.3,23
+CUST00082,Varsha Gaikwad,9901611993,"Flat 11, Shree Park, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE9084065,47.5kg Industrial,Active,2026-02-06,1.2,25
+CUST00083,Deepa Kulkarni,9948988297,"Flat 13, Shree Residency, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE7667458,14.2kg Domestic,Active,2025-10-14,1.6,19
+CUST00084,Nitin Deshpande,9983063850,"Flat 12, Shree Heights, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE5398338,14.2kg Domestic,Surrendered,2025-11-12,1.0,30
+CUST00085,Manoj Gaikwad,9797115550,"Flat 14, Shree Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE4713925,14.2kg Domestic,Active,2025-11-29,0.8,38
+CUST00086,Rekha Lokhande,9245668163,"Flat 13, Laxmi Residency, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE2630611,5kg FTL,Surrendered,2025-11-17,0.8,38
+CUST00087,Shivaji Waghmare,9761051532,"Flat 14, Ganesh Apts, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE3592464,5kg FTL,Active,2025-12-12,1.4,21
+CUST00088,Sneha Thorat,9684615760,"Flat 12, Shree Park, Dighi, Pune",AREA008,Dighi,DIST008,PNE7084862,14.2kg Domestic,Not Eligible,2025-12-09,0.8,38
+CUST00089,Rahul Deshmukh,9944814262,"Flat 11, Sai Heights, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE4558545,5kg FTL,Active,2025-11-14,0.8,38
+CUST00090,Shivaji Bhosale,9452788129,"Flat 5, Om Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE4623062,14.2kg Domestic,Not Eligible,2026-03-02,0.8,38
+CUST00091,Mangal Patil,9241522640,"Flat 1, Ganesh Heights, Baner, Pune",AREA018,Baner,DIST018,PNE5205279,14.2kg Domestic,Active,2026-01-27,1.1,27
+CUST00092,Sarita Joshi,9664880035,"Flat 4, Shree Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE3126655,14.2kg Domestic,Active,2025-11-04,1.0,30
+CUST00093,Priya Salve,9423873102,"Flat 15, Shree Apts, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE8583392,47.5kg Industrial,Not Eligible,2025-12-16,0.5,60
+CUST00094,Anita Kale,9178910051,"Flat 3, Ganesh Heights, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE2811298,14.2kg Domestic,Active,2025-10-24,1.1,27
+CUST00095,Kavita Kale,9642831335,"Flat 20, Laxmi Apts, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE6455706,5kg FTL,Active,2025-10-19,0.8,38
+CUST00096,Sunita Kale,9345343109,"Flat 14, Ganesh Park, Deccan, Pune",AREA021,Deccan,DIST021,PNE4607488,14.2kg Domestic,Surrendered,2026-01-14,1.4,21
+CUST00097,Vijay Waghmare,9172083844,"Flat 3, Shree Apts, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE6243275,14.2kg Domestic,Surrendered,2025-12-30,1.0,30
+CUST00098,Nitin Lokhande,9703102938,"Flat 11, Shree Park, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE2006313,14.2kg Domestic,Surrendered,2025-12-17,0.8,38
+CUST00099,Deepa More,9720535283,"Flat 17, Sai Heights, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE1863121,5kg FTL,Active,2026-03-08,1.5,20
+CUST00100,Sneha Sawant,9716435189,"Flat 8, Laxmi Apts, Paud, Pune",AREA012,Paud,DIST012,PNE7166651,14.2kg Domestic,Surrendered,2025-10-09,1.0,30
+CUST00101,Kavita Mane,9476908532,"Flat 1, Sai Heights, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE1485753,14.2kg Domestic,Active,2026-02-27,1.3,23
+CUST00102,Amit Salve,9330997172,"Flat 13, Laxmi Park, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE1514340,14.2kg Domestic,Active,2026-01-11,1.5,20
+CUST00103,Pramod Rane,9153432064,"Flat 3, Ganesh Park, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE2425342,5kg FTL,Active,2025-12-12,1.2,25
+CUST00104,Suresh Salve,9222210617,"Flat 12, Laxmi Apts, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE5582979,14.2kg Domestic,Surrendered,2025-12-01,1.0,30
+CUST00105,Archana Deshmukh,9108253947,"Flat 7, Ganesh Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE6174418,5kg FTL,Surrendered,2026-01-20,1.4,21
+CUST00106,Rahul Waghmare,9902100304,"Flat 14, Sai Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE3013003,14.2kg Domestic,Surrendered,2025-11-27,1.2,25
+CUST00107,Priya Joshi,9120123575,"Flat 15, Shree Residency, Baner, Pune",AREA018,Baner,DIST018,PNE6941939,14.2kg Domestic,Surrendered,2025-10-23,1.6,19
+CUST00108,Sneha Deshpande,9122394554,"Flat 11, Sai Park, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE5857259,5kg FTL,Not Eligible,2026-03-13,1.4,21
+CUST00109,Ravi Kulkarni,9524951250,"Flat 10, Ganesh Heights, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE2776088,14.2kg Domestic,Active,2025-11-25,1.1,27
+CUST00110,Ravi Salve,9308202515,"Flat 12, Ganesh Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE2913049,14.2kg Domestic,Active,2026-02-13,1.5,20
+CUST00111,Pooja Waghmare,9598165815,"Flat 19, Om Park, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE3564729,5kg FTL,Not Eligible,2025-10-22,1.1,27
+CUST00112,Mangal Mane,9262089272,"Flat 15, Shree Park, Deccan, Pune",AREA021,Deccan,DIST021,PNE6422534,14.2kg Domestic,Active,2026-01-24,0.7,43
+CUST00113,Manoj Kale,9140380477,"Flat 2, Ganesh Residency, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE1942411,14.2kg Domestic,Not Eligible,2026-03-12,1.0,30
+CUST00114,Rajesh Kale,9723123952,"Flat 18, Shree Park, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE9507186,19kg Commercial,Surrendered,2026-02-15,1.2,25
+CUST00115,Manoj More,9970768982,"Flat 11, Shree Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE8979730,14.2kg Domestic,Surrendered,2025-12-13,0.5,60
+CUST00116,Archana Shinde,9490732457,"Flat 12, Ganesh Park, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE9770256,14.2kg Domestic,Active,2025-11-02,1.1,27
+CUST00117,Lata Deshpande,9405100495,"Flat 9, Om Heights, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE6614484,14.2kg Domestic,Surrendered,2026-02-27,1.2,25
+CUST00118,Ashok Deshpande,9238460786,"Flat 20, Shree Residency, Paud, Pune",AREA012,Paud,DIST012,PNE6204824,14.2kg Domestic,Surrendered,2026-01-10,1.2,25
+CUST00119,Ravi Thorat,9119574893,"Flat 12, Ganesh Heights, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE9831414,47.5kg Industrial,Active,2025-12-01,1.5,20
+CUST00120,Vijay Jadhav,9182855381,"Flat 10, Shree Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE4800761,5kg FTL,Not Eligible,2025-10-28,1.3,23
+CUST00121,Dinesh Rane,9968704078,"Flat 6, Laxmi Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE7320310,14.2kg Domestic,Surrendered,2026-02-03,1.2,25
+CUST00122,Pramod Kale,9351258749,"Flat 18, Sai Residency, Katraj, Pune",AREA015,Katraj,DIST015,PNE5780297,47.5kg Industrial,Surrendered,2026-02-14,1.3,23
+CUST00123,Rajesh Salve,9666355637,"Flat 14, Sai Heights, Paud, Pune",AREA012,Paud,DIST012,PNE8391997,5kg FTL,Active,2026-01-30,0.9,33
+CUST00124,Mangal Thorat,9695433590,"Flat 4, Om Apts, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE9062973,14.2kg Domestic,Surrendered,2026-01-25,1.2,25
+CUST00125,Uma Bhosale,9976928440,"Flat 15, Ganesh Apts, Katraj, Pune",AREA015,Katraj,DIST015,PNE9612629,14.2kg Domestic,Active,2025-12-30,1.3,23
+CUST00126,Amit Thorat,9341096660,"Flat 1, Ganesh Apts, Dighi, Pune",AREA008,Dighi,DIST008,PNE7478792,5kg FTL,Surrendered,2026-02-26,1.4,21
+CUST00127,Dinesh Jadhav,9914799481,"Flat 16, Laxmi Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE1642620,19kg Commercial,Active,2026-02-08,1.0,30
+CUST00128,Sunita More,9933409017,"Flat 10, Sai Residency, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE9854536,14.2kg Domestic,Active,2025-10-23,1.6,19
+CUST00129,Anita Rane,9675583372,"Flat 1, Om Heights, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE8669093,5kg FTL,Active,2026-04-04,1.6,19
+CUST00130,Rekha Nikam,9547286055,"Flat 6, Shree Residency, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE6919270,14.2kg Domestic,Active,2025-11-26,1.3,23
+CUST00131,Ashok Deshpande,9500830389,"Flat 9, Shree Residency, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE1341153,5kg FTL,Active,2025-10-18,0.8,38
+CUST00132,Pramod Nikam,9889401015,"Flat 11, Sai Apts, Deccan, Pune",AREA021,Deccan,DIST021,PNE2739191,14.2kg Domestic,Active,2025-10-22,1.3,23
+CUST00133,Pooja Jadhav,9167753684,"Flat 15, Shree Residency, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE8795078,14.2kg Domestic,Surrendered,2026-03-25,1.4,21
+CUST00134,Ravi Deshpande,9975535611,"Flat 18, Laxmi Residency, Aundh, Pune",AREA011,Aundh,DIST011,PNE6202210,14.2kg Domestic,Surrendered,2026-01-21,1.1,27
+CUST00135,Sneha Thorat,9569172971,"Flat 13, Laxmi Park, Paud, Pune",AREA012,Paud,DIST012,PNE1802018,14.2kg Domestic,Active,2025-10-09,1.3,23
+CUST00136,Uma Salve,9386389162,"Flat 3, Laxmi Apts, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE7163058,14.2kg Domestic,Not Eligible,2026-02-17,0.9,33
+CUST00137,Lata Gaikwad,9429097422,"Flat 15, Om Park, Baner, Pune",AREA018,Baner,DIST018,PNE5928582,14.2kg Domestic,Active,2025-12-11,1.0,30
+CUST00138,Archana Joshi,9394801573,"Flat 2, Shree Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE6914963,14.2kg Domestic,Not Eligible,2025-10-13,1.2,25
+CUST00139,Varsha Kale,9137365109,"Flat 5, Shree Heights, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE1522452,5kg FTL,Active,2025-12-27,1.4,21
+CUST00140,Archana Jadhav,9829137330,"Flat 15, Ganesh Residency, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE1543335,14.2kg Domestic,Active,2026-02-28,1.4,21
+CUST00141,Rekha More,9127824235,"Flat 6, Laxmi Park, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE7156398,19kg Commercial,Active,2026-01-28,0.8,38
+CUST00142,Suresh Rane,9406635834,"Flat 16, Sai Apts, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE8487220,14.2kg Domestic,Active,2026-02-19,1.4,21
+CUST00143,Mangal Mane,9817087513,"Flat 12, Shree Residency, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE8467726,19kg Commercial,Not Eligible,2025-10-07,1.6,19
+CUST00144,Varsha Thorat,9646272321,"Flat 8, Shree Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE3920762,5kg FTL,Active,2025-11-29,1.1,27
+CUST00145,Varsha Lokhande,9239340792,"Flat 20, Shree Apts, Khadki, Pune",AREA001,Khadki,DIST001,PNE7054838,14.2kg Domestic,Not Eligible,2025-12-03,0.8,38
+CUST00146,Pramod Joshi,9984053945,"Flat 19, Shree Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE7891998,47.5kg Industrial,Surrendered,2025-12-10,1.0,30
+CUST00147,Pramod Lokhande,9786973497,"Flat 19, Sai Heights, Katraj, Pune",AREA015,Katraj,DIST015,PNE9679860,14.2kg Domestic,Not Eligible,2026-03-21,0.8,38
+CUST00148,Vijay Gaikwad,9276799196,"Flat 6, Ganesh Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE9692311,14.2kg Domestic,Not Eligible,2026-01-22,1.6,19
+CUST00149,Anil Jadhav,9771112648,"Flat 10, Om Apts, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE5204459,14.2kg Domestic,Active,2025-11-07,1.3,23
+CUST00150,Lata Rane,9873773537,"Flat 20, Ganesh Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE3872269,5kg FTL,Active,2026-03-24,1.8,17
+CUST00151,Sunita Rane,9786111573,"Flat 1, Laxmi Residency, Deccan, Pune",AREA021,Deccan,DIST021,PNE5440189,14.2kg Domestic,Active,2026-02-01,0.8,38
+CUST00152,Kavita Kale,9178354184,"Flat 2, Sai Park, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE7813102,14.2kg Domestic,Active,2026-01-07,0.7,43
+CUST00153,Sarita Thorat,9528118701,"Flat 5, Ganesh Apts, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE3410360,14.2kg Domestic,Active,2026-01-26,0.9,33
+CUST00154,Vijay More,9154337019,"Flat 10, Laxmi Park, Katraj, Pune",AREA015,Katraj,DIST015,PNE5159388,14.2kg Domestic,Not Eligible,2026-02-23,1.5,20
+CUST00155,Ravi Kale,9635539154,"Flat 10, Laxmi Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE6246485,14.2kg Domestic,Active,2025-12-08,1.2,25
+CUST00156,Nitin Thorat,9152246275,"Flat 2, Ganesh Park, Dighi, Pune",AREA008,Dighi,DIST008,PNE4609524,14.2kg Domestic,Not Eligible,2025-10-14,1.3,23
+CUST00157,Sunita Jadhav,9383975609,"Flat 12, Laxmi Residency, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE5794062,14.2kg Domestic,Active,2025-11-12,0.5,60
+CUST00158,Meena Gaikwad,9178954113,"Flat 13, Om Park, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE7082139,5kg FTL,Active,2025-10-27,1.0,30
+CUST00159,Deepa Mane,9698967370,"Flat 12, Sai Heights, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE2993318,14.2kg Domestic,Active,2026-03-25,1.2,25
+CUST00160,Vijay Mane,9963251765,"Flat 16, Om Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE1652868,14.2kg Domestic,Not Eligible,2026-02-28,1.2,25
+CUST00161,Sarita Gaikwad,9737506993,"Flat 11, Om Park, Aundh, Pune",AREA011,Aundh,DIST011,PNE6344047,5kg FTL,Active,2026-03-31,1.6,19
+CUST00162,Lata More,9547256709,"Flat 19, Ganesh Apts, Paud, Pune",AREA012,Paud,DIST012,PNE6557278,14.2kg Domestic,Active,2025-10-19,1.9,16
+CUST00163,Pooja Salve,9775410705,"Flat 20, Laxmi Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE4817541,5kg FTL,Active,2025-11-09,1.0,30
+CUST00164,Suresh Patil,9573561557,"Flat 11, Laxmi Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE2843740,14.2kg Domestic,Active,2025-11-27,0.7,43
+CUST00165,Priya Jadhav,9656931857,"Flat 7, Om Residency, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE8912226,47.5kg Industrial,Active,2025-12-29,1.4,21
+CUST00166,Manoj Lokhande,9467570835,"Flat 18, Ganesh Residency, Aundh, Pune",AREA011,Aundh,DIST011,PNE3905518,14.2kg Domestic,Active,2026-01-31,0.7,43
+CUST00167,Kavita Gaikwad,9856881618,"Flat 7, Laxmi Residency, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE6007984,14.2kg Domestic,Surrendered,2026-01-24,1.2,25
+CUST00168,Nitin Lokhande,9507693523,"Flat 13, Ganesh Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE3044708,14.2kg Domestic,Active,2026-03-15,1.9,16
+CUST00169,Suresh Pawar,9989006374,"Flat 18, Ganesh Residency, Paud, Pune",AREA012,Paud,DIST012,PNE8421839,14.2kg Domestic,Surrendered,2025-11-05,0.8,38
+CUST00170,Priya Salve,9342313086,"Flat 8, Shree Apts, Dighi, Pune",AREA008,Dighi,DIST008,PNE5067770,14.2kg Domestic,Surrendered,2026-03-10,0.7,43
+CUST00171,Uma Shinde,9536913550,"Flat 16, Laxmi Heights, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE3306314,5kg FTL,Active,2026-01-21,1.5,20
+CUST00172,Uma Kulkarni,9800400428,"Flat 19, Sai Apts, Deccan, Pune",AREA021,Deccan,DIST021,PNE1992583,19kg Commercial,Active,2026-02-18,1.1,27
+CUST00173,Sarita Gaikwad,9140229006,"Flat 1, Ganesh Apts, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE7660463,19kg Commercial,Active,2025-12-09,1.1,27
+CUST00174,Anita Jadhav,9641394238,"Flat 15, Ganesh Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE9796605,5kg FTL,Active,2025-12-08,0.9,33
+CUST00175,Sanjay Gaikwad,9709650444,"Flat 7, Sai Park, Deccan, Pune",AREA021,Deccan,DIST021,PNE5316188,5kg FTL,Active,2026-03-13,1.1,27
+CUST00176,Pooja Jadhav,9612662437,"Flat 11, Sai Apts, Wakad, Pune",AREA013,Wakad,DIST013,PNE2600296,14.2kg Domestic,Active,2026-01-26,1.1,27
+CUST00177,Anil Thorat,9843854609,"Flat 8, Shree Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE6065810,14.2kg Domestic,Active,2025-10-11,0.8,38
+CUST00178,Dinesh More,9785811060,"Flat 10, Ganesh Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE6217344,14.2kg Domestic,Active,2026-02-24,0.9,33
+CUST00179,Anita Lokhande,9961135562,"Flat 7, Sai Apts, Katraj, Pune",AREA015,Katraj,DIST015,PNE7268384,14.2kg Domestic,Active,2026-01-02,0.8,38
+CUST00180,Priya Lokhande,9642762599,"Flat 7, Om Heights, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE2882551,14.2kg Domestic,Not Eligible,2025-12-12,1.3,23
+CUST00181,Ganesh Salve,9578333394,"Flat 2, Laxmi Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE4446065,14.2kg Domestic,Active,2026-03-21,1.0,30
+CUST00182,Lata Gaikwad,9876616079,"Flat 1, Laxmi Residency, Baner, Pune",AREA018,Baner,DIST018,PNE8757420,5kg FTL,Surrendered,2025-11-07,0.8,38
+CUST00183,Meena Deshmukh,9174108740,"Flat 16, Shree Residency, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE1759836,14.2kg Domestic,Surrendered,2025-10-22,0.7,43
+CUST00184,Deepa Deshpande,9581613078,"Flat 13, Laxmi Apts, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE8052503,5kg FTL,Surrendered,2025-11-17,1.3,23
+CUST00185,Rajesh Salve,9236737888,"Flat 8, Shree Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE6834610,47.5kg Industrial,Active,2025-11-16,1.8,17
+CUST00186,Rajesh Bhosale,9365764028,"Flat 15, Ganesh Heights, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE9924365,14.2kg Domestic,Not Eligible,2026-03-07,1.7,18
+CUST00187,Ganesh Patil,9358413465,"Flat 7, Shree Apts, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE8033690,14.2kg Domestic,Active,2025-10-14,0.6,50
+CUST00188,Rekha Deshmukh,9531929128,"Flat 15, Sai Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE1816653,5kg FTL,Surrendered,2026-02-28,0.6,50
+CUST00189,Nitin Mane,9720058859,"Flat 20, Ganesh Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE5853035,14.2kg Domestic,Active,2025-10-17,1.2,25
+CUST00190,Sunita Gaikwad,9395444277,"Flat 2, Om Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE4708481,14.2kg Domestic,Active,2025-11-29,1.8,17
+CUST00191,Varsha Salve,9442238518,"Flat 14, Laxmi Heights, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE6778321,14.2kg Domestic,Active,2025-11-18,1.5,20
+CUST00192,Mangal Bhosale,9422913264,"Flat 5, Laxmi Apts, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE5042775,14.2kg Domestic,Not Eligible,2025-11-13,0.9,33
+CUST00193,Sanjay Kulkarni,9582954920,"Flat 12, Shree Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE3249703,14.2kg Domestic,Active,2025-11-01,0.9,33
+CUST00194,Mangal Kulkarni,9302038796,"Flat 19, Om Heights, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE1663497,14.2kg Domestic,Not Eligible,2026-01-09,1.2,25
+CUST00195,Sarita More,9901955461,"Flat 16, Sai Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE1257256,14.2kg Domestic,Active,2026-01-12,1.1,27
+CUST00196,Rajesh Kale,9673002461,"Flat 12, Ganesh Residency, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE5748945,14.2kg Domestic,Not Eligible,2025-12-06,1.3,23
+CUST00197,Suresh Thorat,9435997460,"Flat 14, Shree Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE8876742,5kg FTL,Active,2025-11-14,1.1,27
+CUST00198,Kavita Jadhav,9310659326,"Flat 11, Sai Park, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE8005797,14.2kg Domestic,Active,2025-11-15,0.8,38
+CUST00199,Sarita Waghmare,9594811370,"Flat 6, Ganesh Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE6663388,14.2kg Domestic,Active,2026-02-16,1.1,27
+CUST00200,Ravi Deshmukh,9179811669,"Flat 2, Shree Park, Baner, Pune",AREA018,Baner,DIST018,PNE1985360,14.2kg Domestic,Surrendered,2026-03-18,1.7,18
+CUST00201,Deepa Deshmukh,9763395529,"Flat 20, Laxmi Park, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE3533857,14.2kg Domestic,Active,2025-12-20,1.5,20
+CUST00202,Ravi Sawant,9675244407,"Flat 10, Shree Park, Khadki, Pune",AREA001,Khadki,DIST001,PNE1280618,5kg FTL,Not Eligible,2026-03-08,1.1,27
+CUST00203,Ravi Sawant,9975329786,"Flat 12, Ganesh Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE9797727,14.2kg Domestic,Not Eligible,2025-12-08,1.2,25
+CUST00204,Dinesh Bhosale,9422095317,"Flat 3, Shree Apts, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE5080351,14.2kg Domestic,Active,2025-12-04,1.3,23
+CUST00205,Mangal Joshi,9792463878,"Flat 11, Om Apts, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE1158547,19kg Commercial,Not Eligible,2026-02-05,1.1,27
+CUST00206,Anil Deshmukh,9179830621,"Flat 9, Om Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE8977571,14.2kg Domestic,Not Eligible,2026-03-31,1.0,30
+CUST00207,Rajesh Kulkarni,9421346113,"Flat 6, Om Heights, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE3419132,14.2kg Domestic,Not Eligible,2025-10-13,1.1,27
+CUST00208,Rajesh Jadhav,9948790854,"Flat 3, Om Residency, Baner, Pune",AREA018,Baner,DIST018,PNE6565503,14.2kg Domestic,Active,2026-03-16,0.6,50
+CUST00209,Ashok Sawant,9941328406,"Flat 15, Laxmi Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE7655572,14.2kg Domestic,Not Eligible,2025-12-15,1.4,21
+CUST00210,Amit Rane,9417161302,"Flat 8, Shree Apts, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE7376562,14.2kg Domestic,Active,2025-10-24,1.0,30
+CUST00211,Rahul Gaikwad,9577531502,"Flat 12, Ganesh Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE7536772,14.2kg Domestic,Active,2025-12-11,1.0,30
+CUST00212,Sunita More,9128198506,"Flat 3, Ganesh Apts, Baner, Pune",AREA018,Baner,DIST018,PNE9597330,14.2kg Domestic,Surrendered,2025-12-27,1.2,25
+CUST00213,Sarita Lokhande,9360642799,"Flat 19, Om Heights, Khadki, Pune",AREA001,Khadki,DIST001,PNE5896386,5kg FTL,Active,2026-01-26,0.7,43
+CUST00214,Anita Jadhav,9167932588,"Flat 6, Laxmi Residency, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE5503118,14.2kg Domestic,Active,2026-03-16,1.4,21
+CUST00215,Anita Rane,9762143074,"Flat 7, Laxmi Apts, Paud, Pune",AREA012,Paud,DIST012,PNE5222820,14.2kg Domestic,Active,2025-12-24,1.6,19
+CUST00216,Varsha Mane,9572685761,"Flat 11, Laxmi Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE7373495,14.2kg Domestic,Surrendered,2025-10-09,0.9,33
+CUST00217,Sanjay Gaikwad,9889065340,"Flat 16, Om Heights, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE9036449,14.2kg Domestic,Active,2025-12-25,0.8,38
+CUST00218,Uma Nikam,9314533665,"Flat 19, Om Heights, Paud, Pune",AREA012,Paud,DIST012,PNE2910720,5kg FTL,Surrendered,2025-12-07,1.8,17
+CUST00219,Dinesh Kulkarni,9979357576,"Flat 14, Laxmi Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE4517316,14.2kg Domestic,Active,2025-10-18,0.9,33
+CUST00220,Varsha Deshpande,9179419456,"Flat 15, Om Park, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE8098909,14.2kg Domestic,Active,2025-10-09,1.2,25
+CUST00221,Ganesh Lokhande,9737609304,"Flat 3, Shree Heights, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE1616817,5kg FTL,Active,2025-10-21,1.2,25
+CUST00222,Nitin Deshpande,9908186980,"Flat 11, Laxmi Apts, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE1743175,14.2kg Domestic,Active,2025-11-25,0.8,38
+CUST00223,Rekha Kale,9501707828,"Flat 13, Laxmi Heights, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE9703982,14.2kg Domestic,Active,2026-03-09,0.7,43
+CUST00224,Uma Kulkarni,9224628497,"Flat 5, Ganesh Residency, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE7978909,14.2kg Domestic,Surrendered,2025-11-22,0.9,33
+CUST00225,Dinesh Kale,9442426442,"Flat 3, Ganesh Apts, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE6843509,5kg FTL,Active,2026-01-07,0.8,38
+CUST00226,Lata Shinde,9895094534,"Flat 8, Om Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE2834801,14.2kg Domestic,Active,2025-12-16,1.1,27
+CUST00227,Pooja Joshi,9524753348,"Flat 1, Om Heights, Katraj, Pune",AREA015,Katraj,DIST015,PNE4889890,14.2kg Domestic,Active,2026-04-03,1.2,25
+CUST00228,Suresh Sawant,9907803348,"Flat 3, Om Apts, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE4603680,5kg FTL,Active,2026-01-01,0.7,43
+CUST00229,Mangal Waghmare,9666629680,"Flat 11, Om Park, Aundh, Pune",AREA011,Aundh,DIST011,PNE4306357,14.2kg Domestic,Surrendered,2026-01-05,0.9,33
+CUST00230,Archana Shinde,9973744799,"Flat 10, Om Apts, Paud, Pune",AREA012,Paud,DIST012,PNE8681625,5kg FTL,Active,2026-02-02,1.2,25
+CUST00231,Ravi Deshpande,9549080818,"Flat 20, Sai Park, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE2962077,14.2kg Domestic,Active,2025-11-18,1.3,23
+CUST00232,Meena Shinde,9625749126,"Flat 10, Sai Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE3906397,14.2kg Domestic,Active,2026-03-22,1.5,20
+CUST00233,Rajesh Lokhande,9642709938,"Flat 16, Laxmi Park, Paud, Pune",AREA012,Paud,DIST012,PNE1160783,14.2kg Domestic,Not Eligible,2025-11-30,0.9,33
+CUST00234,Nitin Patil,9954570592,"Flat 8, Ganesh Apts, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE2386982,14.2kg Domestic,Active,2026-02-20,1.1,27
+CUST00235,Anita Lokhande,9648473746,"Flat 4, Om Apts, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE8672579,14.2kg Domestic,Active,2026-01-01,0.6,50
+CUST00236,Pramod Kale,9686642360,"Flat 7, Laxmi Apts, Baner, Pune",AREA018,Baner,DIST018,PNE1698108,5kg FTL,Surrendered,2026-01-31,0.9,33
+CUST00237,Shivaji Kulkarni,9571447714,"Flat 4, Sai Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE1540736,5kg FTL,Surrendered,2026-01-05,0.8,38
+CUST00238,Pooja Rane,9249502403,"Flat 7, Sai Apts, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE8183451,14.2kg Domestic,Active,2025-11-03,1.2,25
+CUST00239,Kavita Nikam,9387057426,"Flat 17, Shree Heights, Baner, Pune",AREA018,Baner,DIST018,PNE3824903,47.5kg Industrial,Surrendered,2026-03-20,0.9,33
+CUST00240,Dinesh Jadhav,9368088898,"Flat 5, Ganesh Heights, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE3128830,5kg FTL,Surrendered,2025-11-30,1.5,20
+CUST00241,Amit Kulkarni,9532557724,"Flat 17, Ganesh Residency, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE5508325,14.2kg Domestic,Active,2025-11-07,0.9,33
+CUST00242,Sarita Kale,9781654847,"Flat 12, Shree Park, Khadki, Pune",AREA001,Khadki,DIST001,PNE2562657,14.2kg Domestic,Active,2026-02-09,0.9,33
+CUST00243,Meena Nikam,9240224505,"Flat 19, Laxmi Residency, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE5505300,19kg Commercial,Surrendered,2026-03-24,1.0,30
+CUST00244,Rahul More,9269633510,"Flat 15, Laxmi Apts, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE8710502,47.5kg Industrial,Active,2025-10-10,1.3,23
+CUST00245,Anil Kulkarni,9802858478,"Flat 12, Ganesh Apts, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE6064462,14.2kg Domestic,Not Eligible,2026-02-21,1.5,20
+CUST00246,Ashok Gaikwad,9879524067,"Flat 8, Laxmi Apts, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE7649508,5kg FTL,Active,2025-12-03,1.7,18
+CUST00247,Manoj Patil,9108657116,"Flat 11, Shree Park, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE3226333,5kg FTL,Active,2026-02-05,0.8,38
+CUST00248,Sarita More,9210811807,"Flat 11, Ganesh Residency, Wakad, Pune",AREA013,Wakad,DIST013,PNE2498726,14.2kg Domestic,Surrendered,2026-03-01,0.9,33
+CUST00249,Archana Shinde,9572553155,"Flat 12, Sai Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE3396676,19kg Commercial,Surrendered,2025-12-12,1.5,20
+CUST00250,Ganesh More,9250337960,"Flat 4, Om Park, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE2454383,14.2kg Domestic,Active,2026-02-28,1.3,23
+CUST00251,Archana Rane,9874360740,"Flat 20, Ganesh Apts, Dighi, Pune",AREA008,Dighi,DIST008,PNE5646746,5kg FTL,Surrendered,2026-01-17,1.0,30
+CUST00252,Archana Salve,9302557660,"Flat 13, Ganesh Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE9686388,5kg FTL,Surrendered,2026-02-02,0.9,33
+CUST00253,Archana Kulkarni,9667243311,"Flat 1, Ganesh Residency, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE7474085,14.2kg Domestic,Not Eligible,2025-11-10,1.4,21
+CUST00254,Meena Shinde,9918970742,"Flat 16, Shree Apts, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE7130603,14.2kg Domestic,Active,2026-02-08,1.3,23
+CUST00255,Kavita Salve,9923678093,"Flat 14, Laxmi Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE2014499,14.2kg Domestic,Active,2025-10-29,1.4,21
+CUST00256,Amit Gaikwad,9184848753,"Flat 17, Sai Heights, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE5655136,14.2kg Domestic,Active,2025-10-24,1.0,30
+CUST00257,Mangal Bhosale,9162176039,"Flat 8, Shree Park, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE2109227,14.2kg Domestic,Surrendered,2026-03-21,1.0,30
+CUST00258,Sneha Patil,9860102491,"Flat 5, Shree Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE3946849,14.2kg Domestic,Active,2025-11-23,1.4,21
+CUST00259,Pramod Sawant,9886983862,"Flat 4, Shree Residency, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE5349442,5kg FTL,Active,2026-03-19,1.2,25
+CUST00260,Anita Kale,9648447868,"Flat 12, Shree Park, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE2293020,19kg Commercial,Active,2026-02-23,1.2,25
+CUST00261,Sneha Bhosale,9895406424,"Flat 17, Shree Apts, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE2726457,19kg Commercial,Active,2026-03-24,1.5,20
+CUST00262,Rajesh Jadhav,9292157835,"Flat 2, Om Park, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE7106512,14.2kg Domestic,Active,2026-01-13,0.8,38
+CUST00263,Lata Deshmukh,9292569534,"Flat 8, Om Apts, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE2306728,47.5kg Industrial,Active,2025-12-06,1.0,30
+CUST00264,Sanjay Kulkarni,9693877361,"Flat 15, Shree Residency, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE6212643,14.2kg Domestic,Surrendered,2026-01-17,1.0,30
+CUST00265,Anita Pawar,9886476517,"Flat 18, Sai Heights, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE5069884,14.2kg Domestic,Active,2026-02-04,0.7,43
+CUST00266,Ashok Patil,9459722166,"Flat 1, Laxmi Residency, Baner, Pune",AREA018,Baner,DIST018,PNE6812025,14.2kg Domestic,Active,2026-02-03,1.2,25
+CUST00267,Vijay Sawant,9199886596,"Flat 2, Sai Park, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE9254874,5kg FTL,Active,2026-03-14,1.9,16
+CUST00268,Ravi Jadhav,9784205125,"Flat 13, Shree Apts, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE2603516,14.2kg Domestic,Not Eligible,2026-02-03,0.9,33
+CUST00269,Rajesh Mane,9441511874,"Flat 15, Ganesh Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE5378701,14.2kg Domestic,Active,2025-11-06,1.5,20
+CUST00270,Sneha Shinde,9582718617,"Flat 15, Ganesh Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE3607356,14.2kg Domestic,Active,2026-02-10,0.5,60
+CUST00271,Amit Shinde,9967150570,"Flat 10, Om Apts, Katraj, Pune",AREA015,Katraj,DIST015,PNE6172545,14.2kg Domestic,Not Eligible,2026-02-26,0.5,60
+CUST00272,Deepa Deshpande,9651323128,"Flat 2, Ganesh Residency, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE5164420,5kg FTL,Active,2025-12-22,1.2,25
+CUST00273,Varsha Jadhav,9230409444,"Flat 1, Shree Heights, Katraj, Pune",AREA015,Katraj,DIST015,PNE5191831,14.2kg Domestic,Not Eligible,2025-12-30,1.2,25
+CUST00274,Nitin Nikam,9377906552,"Flat 3, Shree Apts, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE2409947,14.2kg Domestic,Surrendered,2026-03-03,1.2,25
+CUST00275,Priya Shinde,9716203465,"Flat 14, Laxmi Park, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE6562484,14.2kg Domestic,Surrendered,2026-02-19,1.6,19
+CUST00276,Uma Shinde,9395259429,"Flat 9, Laxmi Heights, Paud, Pune",AREA012,Paud,DIST012,PNE4602338,14.2kg Domestic,Surrendered,2026-02-01,1.6,19
+CUST00277,Anita Deshmukh,9194190297,"Flat 9, Laxmi Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE5951043,14.2kg Domestic,Surrendered,2025-11-21,0.5,60
+CUST00278,Rajesh Thorat,9615057244,"Flat 18, Laxmi Residency, Dighi, Pune",AREA008,Dighi,DIST008,PNE1327658,19kg Commercial,Active,2025-12-26,1.1,27
+CUST00279,Rahul Sawant,9162911855,"Flat 16, Om Residency, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE4016809,5kg FTL,Not Eligible,2026-02-23,1.5,20
+CUST00280,Lata Bhosale,9386181187,"Flat 18, Shree Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE5158351,14.2kg Domestic,Not Eligible,2025-12-26,1.2,25
+CUST00281,Varsha Thorat,9735185398,"Flat 1, Ganesh Heights, Paud, Pune",AREA012,Paud,DIST012,PNE3914404,14.2kg Domestic,Active,2025-11-29,1.3,23
+CUST00282,Pooja Waghmare,9140763261,"Flat 3, Shree Heights, Baner, Pune",AREA018,Baner,DIST018,PNE6185050,14.2kg Domestic,Active,2025-12-03,1.5,20
+CUST00283,Vijay Mane,9869805921,"Flat 6, Ganesh Apts, Khadki, Pune",AREA001,Khadki,DIST001,PNE6565572,14.2kg Domestic,Surrendered,2026-02-27,1.3,23
+CUST00284,Mangal Salve,9491797490,"Flat 3, Ganesh Park, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE2860938,14.2kg Domestic,Active,2026-01-12,1.0,30
+CUST00285,Ashok Waghmare,9797052007,"Flat 11, Sai Residency, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE3642476,14.2kg Domestic,Surrendered,2026-02-19,1.1,27
+CUST00286,Sarita Gaikwad,9236739271,"Flat 6, Shree Park, Wakad, Pune",AREA013,Wakad,DIST013,PNE6147639,19kg Commercial,Surrendered,2025-11-10,0.8,38
+CUST00287,Archana Bhosale,9786815488,"Flat 19, Shree Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE4054824,14.2kg Domestic,Surrendered,2026-02-03,0.6,50
+CUST00288,Pooja Kulkarni,9982252644,"Flat 11, Laxmi Apts, Paud, Pune",AREA012,Paud,DIST012,PNE6360633,14.2kg Domestic,Active,2026-03-18,0.7,43
+CUST00289,Priya Deshpande,9570535289,"Flat 14, Sai Park, Paud, Pune",AREA012,Paud,DIST012,PNE5306005,14.2kg Domestic,Active,2025-11-16,1.2,25
+CUST00290,Shivaji Waghmare,9946892378,"Flat 19, Sai Heights, Wakad, Pune",AREA013,Wakad,DIST013,PNE2701688,14.2kg Domestic,Surrendered,2026-03-27,0.6,50
+CUST00291,Amit Mane,9282649071,"Flat 13, Sai Apts, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE1336852,14.2kg Domestic,Not Eligible,2026-03-12,0.8,38
+CUST00292,Dinesh Patil,9563129902,"Flat 6, Om Park, Aundh, Pune",AREA011,Aundh,DIST011,PNE9098979,14.2kg Domestic,Active,2026-02-11,1.8,17
+CUST00293,Sarita Lokhande,9384825874,"Flat 10, Ganesh Heights, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE7866576,14.2kg Domestic,Active,2025-11-15,0.9,33
+CUST00294,Priya Thorat,9104096941,"Flat 14, Shree Residency, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE3576811,5kg FTL,Surrendered,2025-12-03,0.6,50
+CUST00295,Kavita Kulkarni,9608492614,"Flat 4, Ganesh Park, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE2627170,14.2kg Domestic,Not Eligible,2026-01-27,1.3,23
+CUST00296,Pooja Thorat,9509573649,"Flat 12, Sai Park, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE7501626,14.2kg Domestic,Active,2026-01-27,1.1,27
+CUST00297,Dinesh More,9192027526,"Flat 12, Om Park, Dighi, Pune",AREA008,Dighi,DIST008,PNE5505722,47.5kg Industrial,Surrendered,2025-11-14,0.9,33
+CUST00298,Shivaji Salve,9549502766,"Flat 18, Laxmi Heights, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE7494562,14.2kg Domestic,Active,2026-03-27,1.0,30
+CUST00299,Archana Jadhav,9229151674,"Flat 15, Sai Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE9670757,47.5kg Industrial,Not Eligible,2026-03-03,1.2,25
+CUST00300,Amit Joshi,9316809172,"Flat 5, Om Residency, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE8103052,14.2kg Domestic,Surrendered,2026-03-18,0.7,43
+CUST00301,Mangal Sawant,9658010933,"Flat 15, Shree Park, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE7511223,14.2kg Domestic,Active,2025-11-10,0.7,43
+CUST00302,Uma More,9704177085,"Flat 4, Ganesh Residency, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE2681144,19kg Commercial,Active,2025-10-19,1.0,30
+CUST00303,Vijay Rane,9753538609,"Flat 13, Shree Park, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE8936405,19kg Commercial,Active,2026-02-03,1.3,23
+CUST00304,Uma Sawant,9499905152,"Flat 1, Ganesh Residency, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE8972838,14.2kg Domestic,Not Eligible,2025-10-08,1.2,25
+CUST00305,Kavita Kale,9931109347,"Flat 11, Ganesh Park, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE2647814,14.2kg Domestic,Active,2025-12-12,1.3,23
+CUST00306,Sarita Waghmare,9915499713,"Flat 17, Ganesh Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE7831185,14.2kg Domestic,Active,2026-01-15,1.1,27
+CUST00307,Ravi Nikam,9131082848,"Flat 6, Sai Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE9502613,5kg FTL,Active,2025-12-09,0.7,43
+CUST00308,Dinesh Pawar,9394181098,"Flat 12, Laxmi Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE7046090,14.2kg Domestic,Active,2026-03-28,1.4,21
+CUST00309,Mangal Waghmare,9730157871,"Flat 18, Ganesh Residency, Dighi, Pune",AREA008,Dighi,DIST008,PNE7248955,14.2kg Domestic,Not Eligible,2025-10-10,0.8,38
+CUST00310,Rahul Deshpande,9153312407,"Flat 6, Om Heights, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE5782670,19kg Commercial,Surrendered,2025-10-13,1.1,27
+CUST00311,Mangal Patil,9609057994,"Flat 5, Sai Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE5514473,14.2kg Domestic,Surrendered,2026-01-16,0.9,33
+CUST00312,Sunita Deshpande,9474423649,"Flat 15, Ganesh Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE5620085,14.2kg Domestic,Surrendered,2025-10-27,0.8,38
+CUST00313,Shivaji Thorat,9702859986,"Flat 20, Om Residency, Wakad, Pune",AREA013,Wakad,DIST013,PNE2716512,14.2kg Domestic,Active,2026-03-19,2.3,13
+CUST00314,Ashok Mane,9397302928,"Flat 9, Ganesh Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE5638619,14.2kg Domestic,Surrendered,2026-03-21,1.2,25
+CUST00315,Sarita Patil,9803731001,"Flat 16, Ganesh Residency, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE7779646,19kg Commercial,Active,2026-03-26,0.9,33
+CUST00316,Sanjay Bhosale,9836928463,"Flat 18, Laxmi Residency, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE4186247,14.2kg Domestic,Not Eligible,2025-10-18,0.7,43
+CUST00317,Sarita Sawant,9878663220,"Flat 18, Sai Residency, Baner, Pune",AREA018,Baner,DIST018,PNE4038955,5kg FTL,Active,2026-02-06,1.0,30
+CUST00318,Sunita Mane,9499090969,"Flat 9, Om Residency, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE6152035,14.2kg Domestic,Active,2026-03-22,1.4,21
+CUST00319,Sneha Deshpande,9668909764,"Flat 10, Laxmi Apts, Deccan, Pune",AREA021,Deccan,DIST021,PNE2194801,19kg Commercial,Active,2026-02-12,0.9,33
+CUST00320,Nitin Kale,9253785761,"Flat 11, Sai Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE7865099,14.2kg Domestic,Surrendered,2026-02-18,1.1,27
+CUST00321,Pramod Shinde,9718774770,"Flat 6, Laxmi Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE1973306,14.2kg Domestic,Active,2025-12-16,1.3,23
+CUST00322,Anita Deshpande,9105013454,"Flat 2, Om Heights, Wakad, Pune",AREA013,Wakad,DIST013,PNE8197852,5kg FTL,Not Eligible,2026-01-12,1.1,27
+CUST00323,Ashok Bhosale,9342950952,"Flat 12, Ganesh Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE9909268,14.2kg Domestic,Active,2026-01-16,1.3,23
+CUST00324,Shivaji Deshmukh,9420192227,"Flat 10, Laxmi Residency, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE2095334,14.2kg Domestic,Surrendered,2026-03-01,1.5,20
+CUST00325,Uma Deshpande,9120535029,"Flat 8, Sai Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE9223833,14.2kg Domestic,Active,2025-11-26,1.0,30
+CUST00326,Deepa Deshmukh,9502859804,"Flat 9, Om Apts, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE3066315,14.2kg Domestic,Active,2026-03-08,1.2,25
+CUST00327,Manoj Deshpande,9232709191,"Flat 18, Ganesh Park, Deccan, Pune",AREA021,Deccan,DIST021,PNE1331211,5kg FTL,Active,2025-10-11,1.2,25
+CUST00328,Kavita Joshi,9810456933,"Flat 4, Om Residency, Deccan, Pune",AREA021,Deccan,DIST021,PNE1156104,14.2kg Domestic,Surrendered,2025-12-18,1.1,27
+CUST00329,Sneha More,9634443249,"Flat 7, Om Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE9582968,5kg FTL,Not Eligible,2026-02-12,1.1,27
+CUST00330,Kavita Shinde,9142311558,"Flat 18, Laxmi Heights, Paud, Pune",AREA012,Paud,DIST012,PNE7874568,5kg FTL,Active,2026-02-03,1.0,30
+CUST00331,Shivaji Nikam,9818356830,"Flat 16, Sai Apts, Khadki, Pune",AREA001,Khadki,DIST001,PNE1213899,5kg FTL,Active,2026-03-10,0.8,38
+CUST00332,Manoj Gaikwad,9383602087,"Flat 15, Shree Apts, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE4878226,5kg FTL,Not Eligible,2026-01-20,0.5,60
+CUST00333,Mangal Deshmukh,9110385578,"Flat 5, Sai Residency, Paud, Pune",AREA012,Paud,DIST012,PNE6246354,14.2kg Domestic,Active,2025-10-27,1.0,30
+CUST00334,Deepa Mane,9296354549,"Flat 4, Laxmi Park, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE2559464,47.5kg Industrial,Active,2025-12-27,1.2,25
+CUST00335,Varsha Shinde,9221393557,"Flat 5, Shree Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE9023619,14.2kg Domestic,Not Eligible,2025-12-02,1.2,25
+CUST00336,Pooja Rane,9507754288,"Flat 12, Om Apts, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE8351152,19kg Commercial,Not Eligible,2026-03-02,0.7,43
+CUST00337,Priya Kulkarni,9380904676,"Flat 11, Shree Heights, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE9189341,47.5kg Industrial,Surrendered,2026-01-08,1.3,23
+CUST00338,Dinesh Rane,9202265468,"Flat 14, Sai Park, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE9776214,14.2kg Domestic,Surrendered,2025-12-27,1.3,23
+CUST00339,Ravi Waghmare,9632398698,"Flat 6, Shree Park, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE1915467,14.2kg Domestic,Active,2026-01-23,1.8,17
+CUST00340,Rekha Lokhande,9790756707,"Flat 13, Laxmi Heights, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE9504862,14.2kg Domestic,Active,2025-11-09,1.2,25
+CUST00341,Sneha Waghmare,9900194244,"Flat 1, Shree Park, Katraj, Pune",AREA015,Katraj,DIST015,PNE2476728,14.2kg Domestic,Surrendered,2026-04-04,1.3,23
+CUST00342,Ganesh Salve,9703800000,"Flat 7, Laxmi Residency, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE6110305,14.2kg Domestic,Active,2026-02-06,0.8,38
+CUST00343,Anita Thorat,9868706268,"Flat 15, Shree Apts, Katraj, Pune",AREA015,Katraj,DIST015,PNE6569576,5kg FTL,Active,2026-01-07,0.7,43
+CUST00344,Meena Salve,9501461715,"Flat 4, Shree Heights, Paud, Pune",AREA012,Paud,DIST012,PNE5898671,14.2kg Domestic,Not Eligible,2025-12-21,0.9,33
+CUST00345,Uma Deshpande,9331487470,"Flat 15, Sai Residency, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE5266266,14.2kg Domestic,Active,2025-10-24,1.0,30
+CUST00346,Pramod Kale,9591116494,"Flat 19, Om Heights, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE3067274,47.5kg Industrial,Active,2026-03-23,1.0,30
+CUST00347,Ravi Shinde,9842833609,"Flat 19, Sai Heights, Baner, Pune",AREA018,Baner,DIST018,PNE8261353,14.2kg Domestic,Surrendered,2025-10-31,1.3,23
+CUST00348,Ganesh Deshpande,9549537843,"Flat 20, Sai Residency, Aundh, Pune",AREA011,Aundh,DIST011,PNE9457564,14.2kg Domestic,Active,2026-01-19,0.8,38
+CUST00349,Ganesh Salve,9420955532,"Flat 18, Ganesh Heights, Katraj, Pune",AREA015,Katraj,DIST015,PNE3237608,14.2kg Domestic,Surrendered,2026-01-20,1.4,21
+CUST00350,Uma Jadhav,9862782374,"Flat 6, Om Residency, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE6793064,5kg FTL,Surrendered,2025-11-12,1.4,21
+CUST00351,Meena Gaikwad,9553533911,"Flat 1, Om Apts, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE8004117,14.2kg Domestic,Active,2025-10-15,0.8,38
+CUST00352,Anil Shinde,9407751103,"Flat 9, Sai Apts, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE4353806,5kg FTL,Active,2025-11-17,0.5,60
+CUST00353,Mangal Lokhande,9340848222,"Flat 18, Laxmi Heights, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE7017692,14.2kg Domestic,Surrendered,2025-10-08,1.2,25
+CUST00354,Uma Deshpande,9516133637,"Flat 14, Ganesh Apts, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE1788191,14.2kg Domestic,Active,2025-10-28,1.0,30
+CUST00355,Dinesh Thorat,9910790724,"Flat 19, Om Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE8433377,5kg FTL,Not Eligible,2026-01-19,1.4,21
+CUST00356,Lata Kulkarni,9300764570,"Flat 6, Om Apts, Katraj, Pune",AREA015,Katraj,DIST015,PNE3976712,14.2kg Domestic,Active,2025-11-13,0.5,60
+CUST00357,Rahul Mane,9600719456,"Flat 5, Shree Heights, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE3182154,19kg Commercial,Surrendered,2025-10-26,1.4,21
+CUST00358,Anita Nikam,9690729993,"Flat 12, Shree Residency, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE6052539,14.2kg Domestic,Not Eligible,2025-11-22,1.6,19
+CUST00359,Rajesh Kulkarni,9475168561,"Flat 8, Sai Residency, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE9474848,14.2kg Domestic,Active,2025-10-28,1.3,23
+CUST00360,Meena Patil,9223181755,"Flat 12, Laxmi Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE8966781,19kg Commercial,Surrendered,2025-10-27,1.4,21
+CUST00361,Uma More,9514331133,"Flat 9, Om Residency, Dighi, Pune",AREA008,Dighi,DIST008,PNE1669029,14.2kg Domestic,Active,2025-12-30,1.0,30
+CUST00362,Manoj Waghmare,9147085363,"Flat 10, Sai Residency, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE9535166,14.2kg Domestic,Not Eligible,2026-02-21,0.9,33
+CUST00363,Lata Pawar,9835948208,"Flat 14, Shree Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE9945709,14.2kg Domestic,Surrendered,2025-12-14,1.2,25
+CUST00364,Sarita Jadhav,9125504528,"Flat 15, Ganesh Apts, Deccan, Pune",AREA021,Deccan,DIST021,PNE2209981,14.2kg Domestic,Active,2026-01-30,1.1,27
+CUST00365,Anil Joshi,9516646839,"Flat 15, Laxmi Park, Baner, Pune",AREA018,Baner,DIST018,PNE2181822,14.2kg Domestic,Active,2026-03-05,0.9,33
+CUST00366,Ashok Rane,9167900845,"Flat 19, Shree Apts, Baner, Pune",AREA018,Baner,DIST018,PNE1098967,14.2kg Domestic,Active,2026-01-20,1.0,30
+CUST00367,Uma Kale,9509539711,"Flat 13, Shree Park, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE6055825,14.2kg Domestic,Active,2025-12-25,0.9,33
+CUST00368,Ashok Jadhav,9420035728,"Flat 12, Shree Heights, Baner, Pune",AREA018,Baner,DIST018,PNE5948917,14.2kg Domestic,Active,2025-11-03,0.9,33
+CUST00369,Ganesh Thorat,9327350811,"Flat 14, Om Heights, Wakad, Pune",AREA013,Wakad,DIST013,PNE2428191,14.2kg Domestic,Active,2026-01-30,0.9,33
+CUST00370,Pooja Nikam,9158398995,"Flat 18, Laxmi Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE2923047,14.2kg Domestic,Active,2026-03-10,1.6,19
+CUST00371,Lata Bhosale,9207422565,"Flat 10, Om Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE9173698,19kg Commercial,Active,2025-12-10,1.4,21
+CUST00372,Dinesh Nikam,9263632841,"Flat 19, Om Residency, Aundh, Pune",AREA011,Aundh,DIST011,PNE6128383,5kg FTL,Not Eligible,2026-02-20,1.0,30
+CUST00373,Sarita Joshi,9397082704,"Flat 12, Sai Residency, Khadki, Pune",AREA001,Khadki,DIST001,PNE6254872,19kg Commercial,Active,2026-01-03,1.1,27
+CUST00374,Anita Lokhande,9216858154,"Flat 6, Om Apts, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE6124966,5kg FTL,Not Eligible,2026-02-28,1.3,23
+CUST00375,Amit Kulkarni,9120004122,"Flat 17, Shree Park, Baner, Pune",AREA018,Baner,DIST018,PNE4295580,5kg FTL,Active,2026-03-26,1.0,30
+CUST00376,Meena Lokhande,9606917752,"Flat 5, Ganesh Park, Baner, Pune",AREA018,Baner,DIST018,PNE5372416,14.2kg Domestic,Surrendered,2026-01-20,1.7,18
+CUST00377,Deepa Salve,9111372730,"Flat 8, Om Heights, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE8796391,5kg FTL,Active,2026-02-23,1.0,30
+CUST00378,Sarita Waghmare,9485253781,"Flat 2, Sai Park, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE3452813,14.2kg Domestic,Active,2026-02-04,1.1,27
+CUST00379,Rajesh Waghmare,9588169687,"Flat 2, Shree Residency, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE4469093,14.2kg Domestic,Not Eligible,2025-10-24,0.6,50
+CUST00380,Nitin Lokhande,9712204801,"Flat 6, Laxmi Park, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE5417710,14.2kg Domestic,Surrendered,2026-03-16,1.0,30
+CUST00381,Ravi Deshpande,9478921345,"Flat 12, Laxmi Park, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE5220919,19kg Commercial,Active,2026-02-28,0.6,50
+CUST00382,Rekha Kulkarni,9652484481,"Flat 9, Sai Heights, Katraj, Pune",AREA015,Katraj,DIST015,PNE3778404,14.2kg Domestic,Active,2026-03-05,1.6,19
+CUST00383,Sneha Waghmare,9825022076,"Flat 16, Laxmi Heights, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE4864570,14.2kg Domestic,Surrendered,2025-12-20,0.9,33
+CUST00384,Priya Jadhav,9715776454,"Flat 19, Sai Heights, Khadki, Pune",AREA001,Khadki,DIST001,PNE5088109,14.2kg Domestic,Active,2025-11-09,1.2,25
+CUST00385,Ravi Deshpande,9743555234,"Flat 19, Shree Residency, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE1938047,19kg Commercial,Active,2025-10-31,1.4,21
+CUST00386,Pooja Bhosale,9991596102,"Flat 14, Om Heights, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE9081054,5kg FTL,Not Eligible,2026-02-17,1.7,18
+CUST00387,Sanjay Kale,9740522822,"Flat 19, Shree Heights, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE9569884,14.2kg Domestic,Active,2026-03-31,1.1,27
+CUST00388,Mangal Salve,9834834366,"Flat 14, Sai Apts, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE9769641,14.2kg Domestic,Not Eligible,2025-11-02,1.6,19
+CUST00389,Anita Jadhav,9747975975,"Flat 18, Shree Park, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE9915915,14.2kg Domestic,Active,2026-03-24,1.0,30
+CUST00390,Sunita Bhosale,9961463274,"Flat 16, Laxmi Residency, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE9888846,14.2kg Domestic,Surrendered,2025-10-08,1.1,27
+CUST00391,Pramod Bhosale,9189998443,"Flat 10, Om Park, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE2639417,14.2kg Domestic,Active,2026-04-03,0.9,33
+CUST00392,Sneha Salve,9107724556,"Flat 13, Sai Residency, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE9766777,14.2kg Domestic,Active,2025-12-16,1.2,25
+CUST00393,Nitin Thorat,9757001875,"Flat 9, Laxmi Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE5255251,14.2kg Domestic,Surrendered,2025-12-02,1.1,27
+CUST00394,Meena Lokhande,9619433519,"Flat 9, Ganesh Residency, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE7211142,5kg FTL,Active,2026-02-28,1.5,20
+CUST00395,Dinesh Shinde,9207673349,"Flat 7, Om Park, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE2997927,5kg FTL,Not Eligible,2025-10-29,1.1,27
+CUST00396,Pooja Deshpande,9782767320,"Flat 1, Shree Heights, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE1873301,14.2kg Domestic,Surrendered,2026-03-13,0.8,38
+CUST00397,Priya Deshpande,9530189140,"Flat 20, Om Residency, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE5413951,5kg FTL,Surrendered,2026-02-19,1.1,27
+CUST00398,Manoj Patil,9316581500,"Flat 17, Ganesh Heights, Deccan, Pune",AREA021,Deccan,DIST021,PNE9294125,14.2kg Domestic,Surrendered,2025-11-23,1.2,25
+CUST00399,Deepa Bhosale,9803321425,"Flat 1, Sai Apts, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE4886793,47.5kg Industrial,Surrendered,2026-01-04,0.8,38
+CUST00400,Rajesh Nikam,9315081636,"Flat 17, Shree Apts, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE7629401,19kg Commercial,Active,2025-11-12,0.8,38
+CUST00401,Rekha Rane,9308869838,"Flat 15, Laxmi Apts, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE6840069,14.2kg Domestic,Active,2026-03-08,0.8,38
+CUST00402,Ravi Gaikwad,9465035599,"Flat 4, Om Residency, Baner, Pune",AREA018,Baner,DIST018,PNE2214435,19kg Commercial,Not Eligible,2025-11-08,1.6,19
+CUST00403,Pramod Bhosale,9913330750,"Flat 11, Laxmi Park, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE8428425,19kg Commercial,Not Eligible,2025-12-02,1.5,20
+CUST00404,Amit Deshpande,9780389168,"Flat 8, Sai Residency, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE5325497,14.2kg Domestic,Active,2025-11-18,1.0,30
+CUST00405,Lata Mane,9181635326,"Flat 18, Sai Park, Khadki, Pune",AREA001,Khadki,DIST001,PNE5418274,14.2kg Domestic,Active,2025-11-09,1.1,27
+CUST00406,Sarita Pawar,9635796460,"Flat 7, Sai Heights, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE4066614,19kg Commercial,Active,2026-02-12,1.2,25
+CUST00407,Uma Kulkarni,9825647741,"Flat 16, Om Apts, Dighi, Pune",AREA008,Dighi,DIST008,PNE6973148,5kg FTL,Active,2026-03-25,1.2,25
+CUST00408,Archana Mane,9628646448,"Flat 19, Ganesh Park, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE7227644,14.2kg Domestic,Surrendered,2025-11-25,1.2,25
+CUST00409,Priya Salve,9958209543,"Flat 14, Laxmi Apts, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE7675310,14.2kg Domestic,Active,2025-10-11,1.2,25
+CUST00410,Manoj More,9849734394,"Flat 17, Laxmi Residency, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE3932663,5kg FTL,Active,2026-02-10,1.5,20
+CUST00411,Anil Shinde,9689015467,"Flat 9, Sai Residency, Wakad, Pune",AREA013,Wakad,DIST013,PNE2690268,14.2kg Domestic,Surrendered,2026-01-01,0.9,33
+CUST00412,Sunita Pawar,9549997617,"Flat 12, Ganesh Park, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE9367972,14.2kg Domestic,Active,2026-03-02,1.5,20
+CUST00413,Varsha Bhosale,9696291839,"Flat 14, Laxmi Heights, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE4834713,14.2kg Domestic,Not Eligible,2026-02-25,1.3,23
+CUST00414,Pooja Joshi,9636439085,"Flat 5, Om Residency, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE1163448,5kg FTL,Active,2025-11-12,0.7,43
+CUST00415,Priya Pawar,9973830502,"Flat 9, Laxmi Apts, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE1800429,14.2kg Domestic,Active,2026-01-02,0.7,43
+CUST00416,Deepa Patil,9542124908,"Flat 4, Ganesh Heights, Paud, Pune",AREA012,Paud,DIST012,PNE5323737,14.2kg Domestic,Surrendered,2025-11-18,1.4,21
+CUST00417,Anita Kale,9184189438,"Flat 13, Om Residency, Lohegaon, Pune",AREA006,Lohegaon,DIST006,PNE5774942,14.2kg Domestic,Not Eligible,2026-02-21,0.8,38
+CUST00418,Sunita Rane,9713791169,"Flat 13, Shree Apts, Deccan, Pune",AREA021,Deccan,DIST021,PNE6660436,14.2kg Domestic,Active,2026-01-13,1.5,20
+CUST00419,Rajesh Sawant,9577706000,"Flat 12, Om Park, Deccan, Pune",AREA021,Deccan,DIST021,PNE5888148,14.2kg Domestic,Active,2026-03-30,1.0,30
+CUST00420,Lata Sawant,9898730065,"Flat 3, Sai Heights, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE4936391,14.2kg Domestic,Active,2025-12-04,0.7,43
+CUST00421,Pramod Kulkarni,9211592272,"Flat 9, Om Heights, Baner, Pune",AREA018,Baner,DIST018,PNE1903041,14.2kg Domestic,Not Eligible,2025-12-26,1.4,21
+CUST00422,Rekha Gaikwad,9575839885,"Flat 5, Sai Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE4847954,14.2kg Domestic,Surrendered,2026-01-11,1.1,27
+CUST00423,Anil Lokhande,9577648615,"Flat 5, Om Heights, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE8838205,14.2kg Domestic,Active,2025-10-24,1.5,20
+CUST00424,Ravi Lokhande,9432496317,"Flat 12, Laxmi Heights, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE8297709,5kg FTL,Active,2026-01-01,1.0,30
+CUST00425,Ravi Jadhav,9469243620,"Flat 10, Laxmi Apts, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE5358838,5kg FTL,Active,2025-12-03,1.1,27
+CUST00426,Pramod Joshi,9956808156,"Flat 10, Om Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE1153219,5kg FTL,Active,2026-02-15,1.1,27
+CUST00427,Sarita Deshpande,9989516564,"Flat 13, Sai Residency, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE8333427,14.2kg Domestic,Surrendered,2025-11-23,1.0,30
+CUST00428,Kavita Lokhande,9968451673,"Flat 9, Laxmi Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE5561139,19kg Commercial,Active,2026-01-20,1.2,25
+CUST00429,Archana Waghmare,9301637382,"Flat 11, Shree Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE8639388,14.2kg Domestic,Active,2026-02-16,0.9,33
+CUST00430,Anil Jadhav,9867935795,"Flat 15, Shree Heights, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE5733096,14.2kg Domestic,Active,2026-02-08,0.9,33
+CUST00431,Deepa Kale,9848328041,"Flat 2, Ganesh Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE8050508,5kg FTL,Not Eligible,2026-03-21,0.9,33
+CUST00432,Amit Lokhande,9604816257,"Flat 6, Sai Residency, Hadaspar, Pune",AREA009,Hadaspar,DIST009,PNE7583744,5kg FTL,Not Eligible,2026-03-04,1.6,19
+CUST00433,Rekha Deshmukh,9313867761,"Flat 15, Shree Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE5176895,14.2kg Domestic,Surrendered,2026-01-15,0.5,60
+CUST00434,Ashok Deshmukh,9899641923,"Flat 18, Om Apts, Aundh, Pune",AREA011,Aundh,DIST011,PNE3661058,14.2kg Domestic,Surrendered,2026-02-13,1.6,19
+CUST00435,Sneha Bhosale,9779580831,"Flat 14, Ganesh Apts, Paud, Pune",AREA012,Paud,DIST012,PNE1873883,14.2kg Domestic,Active,2026-03-05,1.2,25
+CUST00436,Rahul Deshmukh,9723926702,"Flat 16, Om Heights, Wakad, Pune",AREA013,Wakad,DIST013,PNE5078362,14.2kg Domestic,Active,2026-02-23,0.9,33
+CUST00437,Pramod Deshmukh,9164183056,"Flat 12, Sai Apts, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE2533463,14.2kg Domestic,Active,2025-11-13,1.0,30
+CUST00438,Varsha Kale,9887255513,"Flat 7, Shree Park, Deccan, Pune",AREA021,Deccan,DIST021,PNE6827024,14.2kg Domestic,Active,2026-03-25,0.8,38
+CUST00439,Anita Pawar,9708491359,"Flat 6, Om Residency, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE8340032,14.2kg Domestic,Active,2025-11-02,0.8,38
+CUST00440,Amit Salve,9266457342,"Flat 15, Ganesh Residency, Baner, Pune",AREA018,Baner,DIST018,PNE3690116,14.2kg Domestic,Active,2025-10-23,1.0,30
+CUST00441,Archana Thorat,9933241446,"Flat 20, Sai Residency, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE7359295,5kg FTL,Surrendered,2025-11-18,1.0,30
+CUST00442,Ravi Waghmare,9922200725,"Flat 18, Sai Residency, Wakad, Pune",AREA013,Wakad,DIST013,PNE4185480,14.2kg Domestic,Surrendered,2026-03-07,0.5,60
+CUST00443,Vijay Shinde,9133579936,"Flat 7, Shree Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE9777848,14.2kg Domestic,Active,2025-10-22,1.1,27
+CUST00444,Ravi Rane,9853030195,"Flat 19, Ganesh Apts, Wakad, Pune",AREA013,Wakad,DIST013,PNE9219319,14.2kg Domestic,Surrendered,2026-03-17,1.0,30
+CUST00445,Shivaji Kulkarni,9602574675,"Flat 2, Ganesh Park, Khadki, Pune",AREA001,Khadki,DIST001,PNE4502044,5kg FTL,Surrendered,2026-03-21,0.7,43
+CUST00446,Ravi Deshmukh,9888448988,"Flat 3, Ganesh Apts, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE5459646,19kg Commercial,Not Eligible,2026-03-11,0.5,60
+CUST00447,Ravi Bhosale,9712062546,"Flat 6, Om Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE4875838,5kg FTL,Surrendered,2025-11-08,0.9,33
+CUST00448,Dinesh Joshi,9211779101,"Flat 6, Sai Park, Paud, Pune",AREA012,Paud,DIST012,PNE8696054,14.2kg Domestic,Surrendered,2025-11-19,1.1,27
+CUST00449,Meena Mane,9499130788,"Flat 14, Laxmi Residency, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE8432510,14.2kg Domestic,Surrendered,2026-02-09,1.7,18
+CUST00450,Deepa Kale,9580499237,"Flat 13, Shree Apts, Wakad, Pune",AREA013,Wakad,DIST013,PNE5262908,47.5kg Industrial,Surrendered,2025-11-23,0.8,38
+CUST00451,Suresh Mane,9123301671,"Flat 9, Om Heights, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE6064062,14.2kg Domestic,Active,2026-02-24,2.0,15
+CUST00452,Deepa Nikam,9368281808,"Flat 8, Ganesh Residency, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE5445763,14.2kg Domestic,Active,2026-02-08,1.1,27
+CUST00453,Pooja Waghmare,9986594254,"Flat 19, Shree Residency, Chinchwad, Pune",AREA024,Chinchwad,DIST024,PNE2295227,14.2kg Domestic,Not Eligible,2025-12-28,1.0,30
+CUST00454,Uma Mane,9473587211,"Flat 14, Laxmi Apts, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE1938227,19kg Commercial,Active,2025-10-19,0.6,50
+CUST00455,Priya Gaikwad,9663052341,"Flat 2, Ganesh Heights, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE1191837,14.2kg Domestic,Surrendered,2026-02-24,0.8,38
+CUST00456,Manoj Rane,9717675194,"Flat 17, Shree Heights, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE7591477,14.2kg Domestic,Surrendered,2026-02-26,0.8,38
+CUST00457,Priya Lokhande,9528628393,"Flat 9, Shree Park, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE6639966,14.2kg Domestic,Surrendered,2026-03-02,1.4,21
+CUST00458,Anita Lokhande,9312717408,"Flat 16, Laxmi Heights, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE3262755,14.2kg Domestic,Not Eligible,2025-11-21,1.3,23
+CUST00459,Sanjay Nikam,9196201527,"Flat 4, Laxmi Park, Dighi, Pune",AREA008,Dighi,DIST008,PNE5065372,14.2kg Domestic,Active,2026-01-06,1.6,19
+CUST00460,Pramod Gaikwad,9281736451,"Flat 12, Om Park, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE1406123,14.2kg Domestic,Active,2026-02-04,1.3,23
+CUST00461,Amit More,9894119729,"Flat 2, Sai Heights, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE7271672,19kg Commercial,Not Eligible,2026-04-01,1.4,21
+CUST00462,Kavita Kale,9605936741,"Flat 1, Ganesh Heights, Aundh, Pune",AREA011,Aundh,DIST011,PNE2866934,5kg FTL,Active,2025-11-16,1.5,20
+CUST00463,Vijay Patil,9504378331,"Flat 19, Om Apts, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE5339561,14.2kg Domestic,Active,2026-02-12,0.7,43
+CUST00464,Priya Kale,9803040905,"Flat 1, Shree Park, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE5551347,5kg FTL,Surrendered,2025-10-18,1.0,30
+CUST00465,Ashok Deshpande,9348215410,"Flat 13, Om Apts, Paud, Pune",AREA012,Paud,DIST012,PNE2810117,19kg Commercial,Active,2025-11-03,1.7,18
+CUST00466,Pooja Pawar,9637569722,"Flat 15, Om Apts, Baner, Pune",AREA018,Baner,DIST018,PNE2476741,14.2kg Domestic,Not Eligible,2026-01-16,1.2,25
+CUST00467,Deepa Thorat,9481584364,"Flat 10, Sai Residency, Aundh, Pune",AREA011,Aundh,DIST011,PNE9219709,5kg FTL,Surrendered,2025-12-26,1.0,30
+CUST00468,Rekha Jadhav,9466990085,"Flat 13, Sai Apts, Khadki, Pune",AREA001,Khadki,DIST001,PNE5700872,5kg FTL,Active,2025-10-13,1.2,25
+CUST00469,Sunita Gaikwad,9750009892,"Flat 11, Laxmi Heights, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE4815608,14.2kg Domestic,Active,2025-11-17,0.8,38
+CUST00470,Mangal Jadhav,9431784498,"Flat 17, Sai Park, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE4394202,47.5kg Industrial,Not Eligible,2026-02-26,1.3,23
+CUST00471,Sarita More,9297713683,"Flat 11, Sai Apts, Deccan, Pune",AREA021,Deccan,DIST021,PNE3651604,5kg FTL,Not Eligible,2025-12-20,0.9,33
+CUST00472,Manoj Sawant,9263162642,"Flat 7, Shree Heights, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE6089336,14.2kg Domestic,Surrendered,2025-10-30,1.4,21
+CUST00473,Archana Bhosale,9347940275,"Flat 1, Ganesh Apts, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE5477211,5kg FTL,Active,2025-11-27,0.8,38
+CUST00474,Dinesh Thorat,9297543237,"Flat 13, Laxmi Park, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE8864546,14.2kg Domestic,Active,2026-03-27,0.8,38
+CUST00475,Rekha Pawar,9913656416,"Flat 7, Shree Heights, Kothrud, Pune",AREA014,Kothrud,DIST014,PNE1251897,19kg Commercial,Not Eligible,2025-10-29,1.8,17
+CUST00476,Mangal Kale,9364982130,"Flat 14, Laxmi Apts, Kondhwa, Pune",AREA016,Kondhwa,DIST016,PNE6450844,14.2kg Domestic,Not Eligible,2026-01-14,0.8,38
+CUST00477,Varsha Deshmukh,9659042709,"Flat 4, Laxmi Park, Wakad, Pune",AREA013,Wakad,DIST013,PNE9995261,5kg FTL,Active,2026-02-01,0.5,60
+CUST00478,Sarita Deshmukh,9698826833,"Flat 13, Om Apts, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE7637254,14.2kg Domestic,Active,2026-01-17,1.0,30
+CUST00479,Archana Deshmukh,9840831347,"Flat 17, Sai Park, Pimpri, Pune",AREA025,Pimpri,DIST025,PNE5796850,5kg FTL,Active,2025-11-27,0.8,38
+CUST00480,Pramod Nikam,9847446866,"Flat 18, Sai Park, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE4016063,14.2kg Domestic,Active,2026-02-18,1.2,25
+CUST00481,Sanjay Shinde,9871348981,"Flat 4, Shree Apts, Katraj, Pune",AREA015,Katraj,DIST015,PNE4387856,5kg FTL,Surrendered,2026-03-14,1.2,25
+CUST00482,Sarita Salve,9757207875,"Flat 6, Laxmi Park, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE7443916,14.2kg Domestic,Active,2026-01-09,1.0,30
+CUST00483,Pramod Deshmukh,9550522411,"Flat 10, Ganesh Park, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE3518087,14.2kg Domestic,Active,2026-03-02,1.2,25
+CUST00484,Archana Sawant,9113107987,"Flat 15, Laxmi Park, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE1059272,14.2kg Domestic,Active,2025-11-29,1.2,25
+CUST00485,Sunita Kale,9185260383,"Flat 20, Om Apts, Dighi, Pune",AREA008,Dighi,DIST008,PNE4638539,14.2kg Domestic,Active,2025-10-28,0.8,38
+CUST00486,Priya Shinde,9259188853,"Flat 2, Ganesh Apts, Deccan, Pune",AREA021,Deccan,DIST021,PNE4483580,14.2kg Domestic,Active,2025-11-08,0.9,33
+CUST00487,Sneha Joshi,9291392758,"Flat 6, Ganesh Heights, Kharadi, Pune",AREA020,Kharadi,DIST020,PNE6007018,47.5kg Industrial,Surrendered,2026-01-02,1.0,30
+CUST00488,Pramod Gaikwad,9446627326,"Flat 12, Laxmi Apts, Fursungi, Pune",AREA002,Fursungi,DIST002,PNE2562399,5kg FTL,Not Eligible,2026-03-19,1.2,25
+CUST00489,Anil Mane,9665918566,"Flat 14, Om Heights, Hinjewadi, Pune",AREA010,Hinjewadi,DIST010,PNE8898995,5kg FTL,Surrendered,2026-03-08,1.4,21
+CUST00490,Amit Waghmare,9877468683,"Flat 20, Ganesh Park, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE9874251,14.2kg Domestic,Active,2025-11-21,1.4,21
+CUST00491,Anita Salve,9882956156,"Flat 16, Laxmi Heights, Viman Nagar, Pune",AREA019,Viman Nagar,DIST019,PNE6936673,19kg Commercial,Active,2026-01-20,1.5,20
+CUST00492,Sneha Patil,9599167150,"Flat 4, Sai Park, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE1026523,14.2kg Domestic,Active,2025-11-12,0.9,33
+CUST00493,Kavita Sawant,9948465967,"Flat 3, Ganesh Residency, Deccan, Pune",AREA021,Deccan,DIST021,PNE4562439,14.2kg Domestic,Active,2026-04-03,1.3,23
+CUST00494,Sanjay Deshpande,9877814971,"Flat 19, Om Apts, Vishrantwadi, Pune",AREA004,Vishrantwadi,DIST004,PNE6591559,5kg FTL,Active,2026-01-08,1.1,27
+CUST00495,Ashok Jadhav,9617001884,"Flat 5, Laxmi Residency, Shivajinagar, Pune",AREA022,Shivajinagar,DIST022,PNE9038102,14.2kg Domestic,Not Eligible,2026-03-21,1.6,19
+CUST00496,Nitin Mane,9696116984,"Flat 18, Shree Heights, Bibwewadi, Pune",AREA017,Bibwewadi,DIST017,PNE6022154,14.2kg Domestic,Active,2026-01-04,0.8,38
+CUST00497,Rajesh Lokhande,9278208378,"Flat 19, Om Park, Kirkee, Pune",AREA003,Kirkee,DIST003,PNE3504920,14.2kg Domestic,Active,2026-01-16,1.1,27
+CUST00498,Dinesh Deshmukh,9391518128,"Flat 14, Shree Park, Koregaon Park, Pune",AREA023,Koregaon Park,DIST023,PNE6276424,19kg Commercial,Active,2026-01-17,1.2,25
+CUST00499,Varsha Deshmukh,9935146073,"Flat 7, Shree Park, Mundhwa, Pune",AREA007,Mundhwa,DIST007,PNE9809723,14.2kg Domestic,Surrendered,2025-11-27,1.1,27
+CUST00500,Sanjay Waghmare,9886452604,"Flat 17, Ganesh Residency, Parvati Hill, Pune",AREA005,Parvati Hill,DIST005,PNE4191222,14.2kg Domestic,Not Eligible,2025-11-23,1.2,25

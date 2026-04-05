@@ -1,0 +1,26 @@
+area_id,area_name,assigned_distributor_id,city,district,state,population,estimated_lpg_households,estimated_monthly_demand_cylinders
+AREA001,Khadki,DIST001,Pune,Pune,Maharashtra,80000,57600,48960
+AREA002,Fursungi,DIST002,Pune,Pune,Maharashtra,45000,32400,27540
+AREA003,Kirkee,DIST003,Pune,Pune,Maharashtra,60000,43200,36720
+AREA004,Vishrantwadi,DIST004,Pune,Pune,Maharashtra,95000,68400,58140
+AREA005,Parvati Hill,DIST005,Pune,Pune,Maharashtra,70000,50400,42840
+AREA006,Lohegaon,DIST006,Pune,Pune,Maharashtra,110000,79200,67320
+AREA007,Mundhwa,DIST007,Pune,Pune,Maharashtra,130000,93600,79560
+AREA008,Dighi,DIST008,Pune,Pune,Maharashtra,88000,63360,53856
+AREA009,Hadaspar,DIST009,Pune,Pune,Maharashtra,200000,144000,122400
+AREA010,Hinjewadi,DIST010,Pune,Pune,Maharashtra,180000,129600,110160
+AREA011,Aundh,DIST011,Pune,Pune,Maharashtra,210000,151200,128520
+AREA012,Paud,DIST012,Pune,Pune,Maharashtra,30000,21600,18360
+AREA013,Wakad,DIST013,Pune,Pune,Maharashtra,195000,140400,119340
+AREA014,Kothrud,DIST014,Pune,Pune,Maharashtra,350000,252000,214200
+AREA015,Katraj,DIST015,Pune,Pune,Maharashtra,220000,158400,134640
+AREA016,Kondhwa,DIST016,Pune,Pune,Maharashtra,160000,115200,97920
+AREA017,Bibwewadi,DIST017,Pune,Pune,Maharashtra,140000,100800,85680
+AREA018,Baner,DIST018,Pune,Pune,Maharashtra,280000,201600,171360
+AREA019,Viman Nagar,DIST019,Pune,Pune,Maharashtra,175000,126000,107100
+AREA020,Kharadi,DIST020,Pune,Pune,Maharashtra,190000,136800,116280
+AREA021,Deccan,DIST021,Pune,Pune,Maharashtra,120000,86400,73440
+AREA022,Shivajinagar,DIST022,Pune,Pune,Maharashtra,100000,72000,61200
+AREA023,Koregaon Park,DIST023,Pune,Pune,Maharashtra,90000,64800,55080
+AREA024,Chinchwad,DIST024,Pune,Pune,Maharashtra,310000,223200,189720
+AREA025,Pimpri,DIST025,Pune,Pune,Maharashtra,420000,302400,257040

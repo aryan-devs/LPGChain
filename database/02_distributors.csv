@@ -1,0 +1,26 @@
+distributor_id,company_id,name,agency_name,license_number,contact_phone,address,area_covered,pincode,total_cylinders_received,current_stock,cylinders_delivered,pending_deliveries,total_customers,active_customers,monthly_demand_estimate
+DIST001,COMP001,Indane - Khadki Petroleum Depot,Khadki Petroleum Depot,MH/LPG/39256/PUNE,9992996863,"Ground Floor, Khadki Range Hills, Pune - 411001",Khadki,411001,1256,365,891,22,1526,1269,1079
+DIST002,COMP001,Indane - Shri Siddhoba,Shri Siddhoba,MH/LPG/65302/PUNE,8446647799,"Survey No 224, Hissa No 4/1 Fursungi, Pune - 411002",Fursungi,411002,1219,20,1199,9,756,718,610
+DIST003,COMP001,Indane - Army,Army,MH/LPG/76237/PUNE,9209802138,"Central AFV Depot, B Park CAFVD, Pune - 411003",Kirkee,411003,922,230,692,8,1295,1090,926
+DIST004,COMP001,Indane - Samyak,Samyak,MH/LPG/68878/PUNE,8600043511,"Shop No 6&7, Ashish Kunj Apt, Tank Road, Pune - 411006",Vishrantwadi,411006,1614,119,1495,80,2118,1813,1541
+DIST005,COMP001,Indane - Urja,Urja,MH/LPG/54597/PUNE,2079631684,"Shop No AB8, Ruturang Society, Aranyeshwar Road, Pune - 411009",Parvati Hill,411009,1939,576,1363,40,1053,1005,854
+DIST006,COMP001,Indane - Eternity,Eternity,MH/LPG/22156/PUNE,9175954895,"Ghat No 247/1, Lohegaon Kalwad, Pune - 411032",Lohegaon,411032,1436,321,1115,53,1778,1385,1177
+DIST007,COMP001,Indane - Shahid Pradip,Shahid Pradip,MH/LPG/44671/PUNE,8888944649,"Shop No 4, Dalvi Heights Mundhwa, Pune - 411036",Mundhwa,411036,1196,176,1020,10,1808,1665,1415
+DIST008,COMP001,Indane - Shree Sai Sayaji,Shree Sai Sayaji,MH/LPG/20328/PUNE,7758973055,"Sr No 118/1, Lane No 9, Chaudhary Park, Alandi Rd, Pune - 411015",Dighi,411015,2681,256,2425,75,911,779,662
+DIST009,COMP001,Indane - Vishwa,Vishwa,MH/LPG/16006/PUNE,9922921302,"Plot No 4, Survey No 277/215, Mahadeo Nagar, Manjri Road, Pune - 411028",Hadaspar,411028,2000,230,1770,34,1187,925,786
+DIST010,COMP001,Indane - Rajnandini,Rajnandini,MH/LPG/59823/PUNE,8378999923,"Survey No 257/1/1/C, Hinjewadi Phase 2 Road, Pune - 411057",Hinjewadi,411057,1985,515,1470,40,1353,1065,905
+DIST011,COMP001,Indane - Infantry,Infantry,MH/LPG/58520/PUNE,7743841243,"No Hq 330, Pimpri, Infantry Brigade, Pune - 411027",Aundh,411027,2657,148,2509,50,1894,1503,1278
+DIST012,COMP001,Indane - Aapulki Gramin Vitarak,Aapulki Gramin Vitarak,MH/LPG/99593/PUNE,9881042200,"Gat No 26, Mulshi, Paud Kolwan Road, Pune - 412108",Paud,412108,1658,155,1503,14,1493,1478,1256
+DIST013,COMP001,Indane - Sai Krupa,Sai Krupa,MH/LPG/70589/PUNE,9823011234,"Shop 3, Laxmi Heights, Wakad Road, Pune - 411057",Wakad,411057,1500,177,1323,53,1402,1134,964
+DIST014,COMP001,Indane - Mahalaxmi,Mahalaxmi,MH/LPG/17331/PUNE,9765098765,"Plot 14, Karve Road, Kothrud, Pune - 411038",Kothrud,411038,1905,348,1557,34,1728,1727,1468
+DIST015,COMP001,Indane - Shivam,Shivam,MH/LPG/18675/PUNE,9988776655,"Survey 89, Katraj Bypass Road, Pune - 411046",Katraj,411046,931,119,812,32,2043,1806,1535
+DIST016,COMP001,Indane - Ganesh,Ganesh,MH/LPG/94259/PUNE,9870123456,"Shop 11, Kondhwa Bk Road, Pune - 411048",Kondhwa,411048,2088,410,1678,63,2444,2238,1902
+DIST017,COMP001,Indane - Vitthal,Vitthal,MH/LPG/83579/PUNE,9011234567,"Gat 45, Bibwewadi Main Road, Pune - 411037",Bibwewadi,411037,1385,281,1104,73,971,791,672
+DIST018,COMP001,Indane - Omkar,Omkar,MH/LPG/38746/PUNE,9922334455,"Sr No 12, Baner Pashan Link Road, Pune - 411045",Baner,411045,1876,125,1751,22,2035,1711,1454
+DIST019,COMP001,Indane - Shubham,Shubham,MH/LPG/16175/PUNE,9876543210,"Plot 7, Lohegaon Airport Road, Pune - 411014",Viman Nagar,411014,2887,362,2525,19,772,772,656
+DIST020,COMP001,Indane - Ashirwad,Ashirwad,MH/LPG/88172/PUNE,9823456789,"Sr No 104, Wagholi Kharadi Road, Pune - 411014",Kharadi,411014,1426,107,1319,13,1055,1007,856
+DIST021,COMP002,HP Gas - Pratibha,Pratibha,MH/LPG/42953/PUNE,9765432109,"1187, FC Road, Deccan Gymkhana, Pune - 411004",Deccan,411004,2376,323,2053,75,2317,2278,1936
+DIST022,COMP002,HP Gas - Swaraj,Swaraj,MH/LPG/80381/PUNE,9823109876,"Survey 33, Shivajinagar Station Road, Pune - 411005",Shivajinagar,411005,847,81,766,39,869,825,701
+DIST023,COMP002,HP Gas - Koregaon,Koregaon,MH/LPG/30730/PUNE,9922100011,"Lane 5, North Main Road, Koregaon Park, Pune - 411001",Koregaon Park,411001,2193,544,1649,63,1602,1423,1210
+DIST024,COMP003,Bharat Gas - Chinchwad,Chinchwad,MH/LPG/33416/PUNE,9011009988,"Plot 89, Phase 2, MIDC Chinchwad, Pune - 411019",Chinchwad,411019,813,60,753,69,1478,1364,1159
+DIST025,COMP003,Bharat Gas - Pimpri Central,Pimpri Central,MH/LPG/76540/PUNE,9876001122,"Sr No 44, Old Mumbai Road, Pimpri, Pune - 411018",Pimpri,411018,1235,51,1184,30,1622,1543,1312
