@@ -2,7 +2,498 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Track Order - LPGChain</title>
+  <title>Track Cylinder - LPGChain</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0b2c5c, #1e4d91);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      color: black;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0b2c5c;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .search-section {
+      background: #f8f9ff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .search-section input {
+      flex: 1;
+      min-width: 200px;
+      padding: 12px 15px;
+      border: 2px solid #2f65d9;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .search-section button {
+      padding: 12px 25px;
+      background: #2f65d9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .search-section button:hover {
+      background: #1e4fbf;
+    }
+
+    .booking-details {
+      background: linear-gradient(135deg, #f8f9ff 0%, #e8ecf5 100%);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      border-left: 5px solid #2f65d9;
+      display: none;
+    }
+
+    .booking-details.show {
+      display: block;
+      animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .detail-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+
+    .detail-item {
+      padding: 12px;
+      background: white;
+      border-radius: 8px;
+      border-left: 4px solid #2f65d9;
+    }
+
+    .detail-label {
+      font-size: 12px;
+      color: #666;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+
+    .detail-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0b2c5c;
+    }
+
+    /* Timeline */
+    .timeline-section {
+      margin-top: 40px;
+      display: none;
+    }
+
+    .timeline-section.show {
+      display: block;
+    }
+
+    .timeline-title {
+      text-align: center;
+      color: #0b2c5c;
+      font-size: 20px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #ddd;
+    }
+
+    .timeline-step {
+      position: relative;
+      margin-left: 100px;
+      padding: 20px;
+      margin-bottom: 25px;
+      background: #f8f9ff;
+      border-radius: 10px;
+      border-left: 4px solid #ddd;
+      transition: all 0.3s;
+    }
+
+    .timeline-step.active {
+      background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+      border-left-color: #28a745;
+      box-shadow: 0 5px 15px rgba(40, 167, 69, 0.2);
+    }
+
+    .timeline-step.upcoming {
+      background: #f8f9ff;
+      border-left-color: #ddd;
+    }
+
+    .timeline-step::before {
+      content: "";
+      position: absolute;
+      left: -43px;
+      top: 25px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid #ddd;
+      transition: all 0.3s;
+    }
+
+    .timeline-step.active::before {
+      background: #28a745;
+      border-color: #28a745;
+      box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+    }
+
+    .step-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0b2c5c;
+      margin-bottom: 8px;
+    }
+
+    .step-description {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .step-time {
+      font-size: 12px;
+      color: #999;
+      font-style: italic;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .status-badge.booked {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .status-badge.confirmed {
+      background: #cfe2ff;
+      color: #084298;
+    }
+
+    .status-badge.in-transit {
+      background: #cff4fc;
+      color: #055160;
+    }
+
+    .status-badge.delivered {
+      background: #d1e7dd;
+      color: #0a3622;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .back a {
+      color: #0b2c5c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .back a:hover {
+      color: #2f65d9;
+    }
+
+    .error-message {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      border-left: 4px solid #f5c6cb;
+      display: none;
+    }
+
+    .error-message.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="background:#0b2c5c; color:white; padding:10px; text-align:center; font-weight:bold; margin:-20px -20px 20px;">
+    LPGChain - Smart LPG Distribution System
+  </div>
+
+  <div class="container">
+    <h2>🚚 Track Your Cylinder (Real-Time Updates)</h2>
+
+    <div class="search-section">
+      <input type="number" id="bookingId" placeholder="Enter Booking ID" required>
+      <button onclick="trackOrder()">🔍 Track</button>
+      <button onclick="toggleAutoRefresh()" style="background: #28a745;">⏱️ Auto Refresh</button>
+    </div>
+
+    <div class="error-message" id="errorMsg"></div>
+
+    <div class="booking-details" id="bookingDetails">
+      <div class="detail-row">
+        <div class="detail-item">
+          <div class="detail-label">Booking ID</div>
+          <div class="detail-value" id="detailId">-</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Customer Name</div>
+          <div class="detail-value" id="detailName">-</div>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-item">
+          <div class="detail-label">Delivery Address</div>
+          <div class="detail-value" id="detailAddress">-</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Cylinder Type</div>
+          <div class="detail-value" id="detailType">-</div>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-item">
+          <div class="detail-label">Current Status</div>
+          <div class="detail-value" id="detailStatus">-</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real-Time Timeline -->
+    <div class="timeline-section" id="timelineSection">
+      <div class="timeline-title">📍 Delivery Progress</div>
+      
+      <div class="timeline">
+        <div class="timeline-step" id="step1">
+          <div class="step-title">✓ Order Booked</div>
+          <div class="step-description">Your LPG cylinder booking has been placed successfully</div>
+          <div class="step-time" id="step1-time"></div>
+        </div>
+
+        <div class="timeline-step" id="step2">
+          <div class="step-title">Confirmed by Distributor</div>
+          <div class="step-description">Your booking has been confirmed and cylinder allocated</div>
+          <div class="step-time" id="step2-time"></div>
+        </div>
+
+        <div class="timeline-step" id="step3">
+          <div class="step-title">Out for Delivery</div>
+          <div class="step-description">Your cylinder is on the way to your delivery address</div>
+          <div class="step-time" id="step3-time"></div>
+        </div>
+
+        <div class="timeline-step" id="step4">
+          <div class="step-title">Delivered</div>
+          <div class="step-description">Your LPG cylinder has been successfully delivered</div>
+          <div class="step-time" id="step4-time"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back">
+      <a href="customer-dashboard.html">⬅ Back to Dashboard</a>
+    </div>
+  </div>
+
+<script>
+  let autoRefreshInterval = null;
+  let currentBookingId = null;
+
+  async function trackOrder() {
+    const bookingId = document.getElementById("bookingId").value;
+
+    if (!bookingId) {
+      showError("Please enter Booking ID");
+      return;
+    }
+
+    currentBookingId = bookingId;
+    await fetchAndDisplayBooking(bookingId);
+  }
+
+  async function fetchAndDisplayBooking(bookingId) {
+    try {
+      const response = await fetch(`http://localhost:8080/api/bookings/${bookingId}`);
+      
+      if (!response.ok) {
+        showError("❌ Booking not found! Please check the ID.");
+        document.getElementById("bookingDetails").classList.remove("show");
+        document.getElementById("timelineSection").classList.remove("show");
+        return;
+      }
+
+      const booking = await response.json();
+      hideError();
+
+      // Display booking details
+      document.getElementById("detailId").textContent = booking.id;
+      document.getElementById("detailName").textContent = booking.name;
+      document.getElementById("detailAddress").textContent = booking.address;
+      document.getElementById("detailType").textContent = booking.type;
+      document.getElementById("detailStatus").innerHTML = `<span class="status-badge ${getStatusClass(booking.status)}">${booking.status}</span>`;
+
+      document.getElementById("bookingDetails").classList.add("show");
+      document.getElementById("timelineSection").classList.add("show");
+
+      // Update timeline based on status
+      updateTimeline(booking.status);
+
+    } catch (error) {
+      showError("❌ Error connecting to backend!");
+      console.error(error);
+    }
+  }
+
+  function updateTimeline(status) {
+    // Reset all steps
+    document.getElementById("step1").classList.remove("active");
+    document.getElementById("step2").classList.remove("active");
+    document.getElementById("step3").classList.remove("active");
+    document.getElementById("step4").classList.remove("active");
+
+    document.getElementById("step1").classList.add("upcoming");
+    document.getElementById("step2").classList.add("upcoming");
+    document.getElementById("step3").classList.add("upcoming");
+    document.getElementById("step4").classList.add("upcoming");
+
+    // Mark steps as active based on status
+    if (status === "Booked" || status === "Confirmed" || status === "Out for Delivery" || status === "Delivered") {
+      document.getElementById("step1").classList.remove("upcoming");
+      document.getElementById("step1").classList.add("active");
+      document.getElementById("step1-time").textContent = "✓ Completed";
+    }
+
+    if (status === "Confirmed" || status === "Out for Delivery" || status === "Delivered") {
+      document.getElementById("step2").classList.remove("upcoming");
+      document.getElementById("step2").classList.add("active");
+      document.getElementById("step2-time").textContent = "✓ Completed";
+    }
+
+    if (status === "Out for Delivery" || status === "Delivered") {
+      document.getElementById("step3").classList.remove("upcoming");
+      document.getElementById("step3").classList.add("active");
+      document.getElementById("step3-time").textContent = "🚚 In Progress...";
+    }
+
+    if (status === "Delivered") {
+      document.getElementById("step4").classList.remove("upcoming");
+      document.getElementById("step4").classList.add("active");
+      document.getElementById("step4-time").textContent = "✓ Delivered";
+    }
+  }
+
+  function getStatusClass(status) {
+    switch(status) {
+      case "Booked": return "booked";
+      case "Confirmed": return "confirmed";
+      case "Out for Delivery": return "in-transit";
+      case "Delivered": return "delivered";
+      default: return "booked";
+    }
+  }
+
+  function showError(message) {
+    const errorMsg = document.getElementById("errorMsg");
+    errorMsg.textContent = message;
+    errorMsg.classList.add("show");
+  }
+
+  function hideError() {
+    const errorMsg = document.getElementById("errorMsg");
+    errorMsg.classList.remove("show");
+  }
+
+  function toggleAutoRefresh() {
+    if (autoRefreshInterval) {
+      clearInterval(autoRefreshInterval);
+      autoRefreshInterval = null;
+      alert("✓ Auto-refresh stopped");
+    } else {
+      if (!currentBookingId) {
+        alert("Please search for a booking first");
+        return;
+      }
+
+      autoRefreshInterval = setInterval(() => {
+        fetchAndDisplayBooking(currentBookingId);
+      }, 3000); // Refresh every 3 seconds
+
+      alert("✓ Auto-refresh enabled! Updates every 3 seconds");
+    }
+  }
+</script>
+
+  <div style="text-align:center; padding:10px; background:#eee; margin:20px -40px -40px; border-radius: 0 0 20px 20px;">
+    © 2026 LPGChain | Developed for Smart Gas Tracking System
+  </div>
+
+</body>
+</html>
   <style>
     body {
       font-family: Arial, sans-serif;

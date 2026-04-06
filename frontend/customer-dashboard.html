@@ -4,165 +4,376 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Customer Dashboard - LPGChain</title>
-  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0b2c5c, #1e4d91);
-      color: white;
+      padding: 0;
+      box-sizing: border-box;
     }
 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0b2c5c, #1e4d91);
+      color: white;
+      min-height: 100vh;
+    }
+
+    /* Top Brand Bar */
+    .brand-bar {
+      background: #0b2c5c;
+      padding: 8px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* Header */
     .header {
-      background: white;
-      color: #0b2c5c;
-      padding: 15px 30px;
+      background: linear-gradient(135deg, #fff 0%, #f8f9ff 100%);
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     }
 
-    .header h2 {
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-left h2 {
       margin: 0;
+      color: #0b2c5c;
+      font-size: 24px;
+    }
+
+    .header-right {
+      display: flex;
+      gap: 15px;
+      align-items: center;
     }
 
     .logout-btn {
       background: #dc3545;
       color: white;
       border: none;
-      padding: 10px 18px;
+      padding: 12px 25px;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
+      transition: all 0.3s;
+      font-size: 14px;
     }
 
     .logout-btn:hover {
-      background: #b52b3a;
+      background: #c82333;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
     }
 
+    /* Main Container */
     .container {
-      padding: 30px;
+      padding: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
     }
 
-    .welcome-box {
-      background: rgba(255,255,255,0.1);
-      padding: 25px;
-      border-radius: 15px;
+    /* Welcome Section */
+    .welcome-section {
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
+      padding: 40px;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .welcome-section h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .welcome-section p {
+      font-size: 16px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    /* Dashboard Grid */
+    .dashboard-title {
+      color: white;
+      font-size: 24px;
       margin-bottom: 30px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    .welcome-box h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
 
     .dashboard-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    /* Cards */
+    .card-wrapper {
+      text-decoration: none;
+      color: inherit;
     }
 
     .card {
       background: white;
-      color: #0b2c5c;
       border-radius: 15px;
-      padding: 25px;
+      padding: 35px;
       text-align: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      transition: 0.3s;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      background: #f3f7ff;
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #fff 0%, #f3f7ff 100%);
+    }
+
+    .card:hover::before {
+      left: 100%;
+    }
+
+    .card-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+      display: block;
     }
 
     .card h3 {
-      margin-bottom: 10px;
-      font-size: 22px;
+      margin: 15px 0 10px;
+      font-size: 20px;
+      color: #0b2c5c;
+      font-weight: bold;
     }
 
     .card p {
       font-size: 14px;
-      color: #555;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 20px;
     }
 
-    .footer {
+    .card-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #2f65d9 0%, #1e4fbf 100%);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .card-button:hover {
+      background: linear-gradient(135deg, #1e4fbf 0%, #0f3080 100%);
+      box-shadow: 0 5px 15px rgba(47, 101, 217, 0.4);
+      transform: scale(1.05);
+    }
+
+    /* Quick Stats */
+    .quick-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .stat-box {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.2);
       text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-      font-size: 14px;
-      color: #ddd;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    .stat-value {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    /* Footer */
+    .footer {
+      background: rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .welcome-section {
+        padding: 25px;
+      }
+
+      .welcome-section h1 {
+        font-size: 28px;
+      }
+
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dashboard-title {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
+  <div class="brand-bar">
+    LPGChain - Smart LPG Distribution System
+  </div>
+
   <div class="header">
-    <h2>LPGChain - Customer Dashboard</h2>
-    <button class="logout-btn" onclick="logout()">Logout</button>
+    <div class="header-left">
+      <h2>🏠 Customer Dashboard</h2>
+    </div>
+    <div class="header-right">
+      <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+    </div>
   </div>
 
   <div class="container">
-    <div class="welcome-box">
-      <h1>Welcome, Customer 👋</h1>
-      <p>Manage your LPG bookings, track delivery, and view your connection details.</p>
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <h1>Welcome, Customer! 👋</h1>
+      <p>Manage your LPG bookings, track deliveries in real-time, and access all your account information in one place.</p>
     </div>
 
+    <!-- Quick Stats -->
+    <div class="quick-stats">
+      <div class="stat-box">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Active Bookings</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Total Orders</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Delivered</div>
+      </div>
+    </div>
+
+    <!-- Main Dashboard Grid -->
+    <div class="dashboard-title">What would you like to do?</div>
+
     <div class="dashboard-grid">
-      <a href="book-cylinder.html">
+      <a href="book-cylinder.html" class="card-wrapper">
         <div class="card">
-          <h3>📦 Book Cylinder</h3>
-          <p>Book a new LPG cylinder quickly and easily.</p>
+          <span class="card-icon">📦</span>
+          <h3>Book LPG Cylinder</h3>
+          <p>Order a new LPG cylinder with your preferred type and delivery area.</p>
+          <button class="card-button">Book Now</button>
         </div>
       </a>
 
-      <a href="track-order.html">
+      <a href="track-order.html" class="card-wrapper">
         <div class="card">
-          <h3>🚚 Track Order</h3>
-          <p>Track your LPG cylinder from booking to delivery.</p>
+          <span class="card-icon">🚚</span>
+          <h3>Track Delivery</h3>
+          <p>Monitor your cylinder delivery in real-time with live status updates.</p>
+          <button class="card-button">Track Now</button>
         </div>
       </a>
 
-      <a href="#">
+      <a href="#" class="card-wrapper">
         <div class="card">
-          <h3>📜 Booking History</h3>
-          <p>Check your previous LPG booking records.</p>
+          <span class="card-icon">📜</span>
+          <h3>Booking History</h3>
+          <p>View all your previous LPG orders and delivery records.</p>
+          <button class="card-button">View History</button>
         </div>
       </a>
 
-      <a href="#">
+      <a href="#" class="card-wrapper">
         <div class="card">
-          <h3>👤 My Connection</h3>
-          <p>View your LPG account and distributor details.</p>
+          <span class="card-icon">👤</span>
+          <h3>My Connection</h3>
+          <p>Manage your LPG connection details and account settings.</p>
+          <button class="card-button">Manage</button>
         </div>
       </a>
 
-      <a href="#">
+      <a href="#" class="card-wrapper">
         <div class="card">
-          <h3>🛠 Support / Complaint</h3>
-          <p>Raise a complaint or contact support.</p>
+          <span class="card-icon">💬</span>
+          <h3>Support & Help</h3>
+          <p>Contact support team for complaints, feedback, or assistance.</p>
+          <button class="card-button">Get Support</button>
+        </div>
+      </a>
+
+      <a href="#" class="card-wrapper">
+        <div class="card">
+          <span class="card-icon">⚙️</span>
+          <h3>Settings</h3>
+          <p>Update your profile, preferences, and notification settings.</p>
+          <button class="card-button">Settings</button>
         </div>
       </a>
     </div>
   </div>
 
   <div class="footer">
-    © 2026 LPGChain | Transparent LPG Distribution System
+    © 2026 LPGChain | Transparent & Secure LPG Distribution System
   </div>
 
   <script>
     function logout() {
-      alert("Logged out successfully!");
-      window.location.href = "login.html";
+      if (confirm("Are you sure you want to logout?")) {
+        alert("Logged out successfully!");
+        window.location.href = "index.html";
+      }
     }
   </script>
 

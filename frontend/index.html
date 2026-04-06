@@ -462,6 +462,13 @@
         <span onclick="togglePassword()">👁</span>
       </div>
 
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="CUSTOMER">Customer</option>
+        <option value="DISTRIBUTOR">Distributor</option>
+        <option value="ADMIN">Admin</option>
+      </select>
+
       <button onclick="handleLogin()">Login</button>
 
       <div class="register-link">
@@ -538,15 +545,17 @@
     async function handleLogin() {
       const email = document.getElementById("email").value.trim();
       const password = document.getElementById("password").value.trim();
+      const role = document.getElementById("role").value;
 
-      if (!email || !password) {
-        alert("Please enter email and password!");
+      if (!email || !password || !role) {
+        alert("Please enter email, password, and select role!");
         return;
       }
 
       const userData = {
         email: email,
-        password: password
+        password: password,
+        role: role
       };
 
       try {
@@ -560,28 +569,22 @@
 
         const result = await response.text();
 
-        if (result.includes("successful")) {
-          localStorage.setItem("email", email);
+        if (response.ok) {
+          alert("✅ Login successful!");
 
-          if (result.includes("CUSTOMER")) {
-            localStorage.setItem("role", "CUSTOMER");
-            window.location.href = "customer.html";
-          } 
-          else if (result.includes("ADMIN")) {
-            localStorage.setItem("role", "ADMIN");
-            window.location.href = "admin.html";
-          } 
-          else if (result.includes("DISTRIBUTOR")) {
-            localStorage.setItem("role", "DISTRIBUTOR");
-            window.location.href = "distributor.html";
+          if (role === "CUSTOMER") {
+            window.location.href = "customer-dashboard.html";
+          } else if (role === "DISTRIBUTOR") {
+            window.location.href = "distributor-dashboard.html";
+          } else if (role === "ADMIN") {
+            window.location.href = "admin-dashboard.html";
           }
-
         } else {
-          alert(result);
+          alert("❌ Login failed: " + result);
         }
 
       } catch (error) {
-        alert("Error connecting to backend!");
+        alert("❌ Error connecting to backend!");
         console.error(error);
       }
     }

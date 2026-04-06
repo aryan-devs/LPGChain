@@ -69,13 +69,16 @@
   <h2>📦 Book LPG Cylinder</h2>
 
   <form id="bookingForm">
-    <input type="text" id="name" placeholder="Customer Name" required>
-    <input type="text" id="address" placeholder="Delivery Address" required>
+    <input type="text" id="name" placeholder="Enter Full Name" required>
+    
+    <select id="area" required onchange="loadDistributor()">
+      <option value="">Select Area</option>
+    </select>
+
+    <input type="text" id="distributor" placeholder="Assigned Distributor" readonly>
 
     <select id="type" required>
       <option value="">Select Cylinder Type</option>
-      <option value="Domestic LPG">Domestic LPG</option>
-      <option value="Commercial LPG">Commercial LPG</option>
     </select>
 
     <button type="submit">Book Now</button>
@@ -87,12 +90,74 @@
 </div>
 
 <script>
+  // Load areas on page load
+  async function loadAreas() {
+    try {
+      const response = await fetch("http://localhost:8080/api/bookings/areas");
+      const areas = await response.json();
+
+      const areaSelect = document.getElementById("area");
+      areas.forEach(area => {
+        const option = document.createElement("option");
+        option.value = area.name;
+        option.textContent = area.name;
+        areaSelect.appendChild(option);
+      });
+    } catch (error) {
+      console.error("Error loading areas:", error);
+    }
+  }
+
+  // Load cylinder types on page load
+  async function loadCylinderTypes() {
+    try {
+      const response = await fetch("http://localhost:8080/api/bookings/cylinder-types");
+      const types = await response.json();
+
+      const typeSelect = document.getElementById("type");
+      types.forEach(type => {
+        const option = document.createElement("option");
+        option.value = type.name;
+        option.textContent = type.name;
+        typeSelect.appendChild(option);
+      });
+    } catch (error) {
+      console.error("Error loading cylinder types:", error);
+    }
+  }
+
+  // Load distributor based on selected area
+  async function loadDistributor() {
+    const area = document.getElementById("area").value;
+    
+    if (!area) {
+      document.getElementById("distributor").value = "";
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:8080/api/bookings/distributor/${area}`);
+      const distributor = await response.json();
+      document.getElementById("distributor").value = distributor.name;
+    } catch (error) {
+      console.error("Error loading distributor:", error);
+      document.getElementById("distributor").value = "Error loading distributor";
+    }
+  }
+
+  // Load areas and types when page loads
+  window.addEventListener("load", function() {
+    loadAreas();
+    loadCylinderTypes();
+  });
+
+  // Handle form submission
   document.getElementById("bookingForm").addEventListener("submit", async function(e) {
     e.preventDefault();
 
     const bookingData = {
       name: document.getElementById("name").value,
-      address: document.getElementById("address").value,
+      address: document.getElementById("area").value,
       type: document.getElementById("type").value,
       status: "Booked"
     };
@@ -110,6 +175,7 @@
       alert(result);
 
       document.getElementById("bookingForm").reset();
+      document.getElementById("distributor").value = "";
     } catch (error) {
       alert("Error connecting to backend!");
       console.error(error);

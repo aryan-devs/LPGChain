@@ -47,7 +47,7 @@
                     </span>
                 </div>
 
-                <input type="text" id="area" placeholder="Area / Address" required />
+                <input type="text" id="address" placeholder="Area / Address" required />
 
                 <button type="submit">Create Account</button>
             </form>
@@ -61,16 +61,14 @@
     </div>
 
     <script>
-        const form = document.querySelector("form");
-
-        form.addEventListener("submit", async function (e) {
+        document.getElementById("registerForm").addEventListener("submit", async function(e) {
             e.preventDefault();
 
-            const name = document.querySelector("#name").value;
-            const email = document.querySelector("#email").value;
-            const password = document.querySelector("#password").value;
-            const confirmPassword = document.querySelector("#confirmPassword").value;
-            const area = document.querySelector("#area").value;
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const confirmPassword = document.getElementById("confirmPassword").value.trim();
+            const address = document.getElementById("address").value.trim();
 
             if (password !== confirmPassword) {
                 alert("Passwords do not match!");
@@ -94,15 +92,16 @@
                 });
 
                 const result = await response.text();
-                alert(result);
 
-                if (result.includes("successfully")) {
-                    window.location.href = "login.html";
+                if (response.ok) {
+                    alert("✅ Account created successfully! Redirecting to login...");
+                    window.location.href = "index.html";
+                } else {
+                    alert("❌ Registration failed: " + result);
                 }
 
-                form.reset();
             } catch (error) {
-                alert("Error connecting to backend!");
+                alert("❌ Error connecting to backend!");
                 console.error(error);
             }
         });
