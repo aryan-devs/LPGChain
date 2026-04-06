@@ -120,11 +120,9 @@
     <h2>🚚 Track Your LPG Order</h2>
 
     <div class="order-box">
-      <p><strong>Order ID:</strong> LPG12345</p>
-      <p><strong>Customer Name:</strong> A R</p>
-      <p><strong>Booking Date:</strong> 06 April 2026</p>
-      <p><strong>Expected Delivery:</strong> 07 April 2026</p>
-      <span class="status-badge">Dispatched</span>
+      <input type="number" id="bookingId" placeholder="Enter Booking ID" required>
+      <button onclick="trackOrder()">Track Order</button>
+      <div id="result" style="margin-top:20px; font-weight:bold;"></div>
     </div>
 
     <div class="timeline">
@@ -153,6 +151,40 @@
       <a href="customer-dashboard.html">⬅ Back to Dashboard</a>
     </div>
   </div>
+
+<script>
+  async function trackOrder() {
+    const bookingId = document.getElementById("bookingId").value;
+
+    if (!bookingId) {
+      alert("Please enter Booking ID");
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:8080/api/bookings/${bookingId}`);
+      
+      if (!response.ok) {
+        document.getElementById("result").innerHTML = "❌ Booking not found!";
+        return;
+      }
+
+      const booking = await response.json();
+
+      document.getElementById("result").innerHTML = `
+        ✅ <br>
+        Booking ID: ${booking.id} <br>
+        Name: ${booking.name} <br>
+        Address: ${booking.address} <br>
+        Cylinder Type: ${booking.type} <br>
+        Status: <b>${booking.status}</b>
+      `;
+    } catch (error) {
+      document.getElementById("result").innerHTML = "❌ Error connecting to backend!";
+      console.error(error);
+    }
+  }
+</script>
 
 </body>
 </html>

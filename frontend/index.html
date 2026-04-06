@@ -392,6 +392,10 @@
 </head>
 <body>
 
+  <div style="background:#0b2c5c; color:white; padding:10px; text-align:center; font-weight:bold;">
+    LPGChain - Smart LPG Distribution System
+  </div>
+
   <!-- HEADER -->
   <div class="header">
     <div class="logo">
@@ -472,14 +476,25 @@
       <div class="quick-title">Quick Access</div>
       <div class="buttons-grid">
 
-        <div class="btn"><i class="fas fa-user-circle"></i><div>My LPG Connection</div></div>
-        <div class="btn"><i class="fas fa-plus"></i><div>Get New Order</div></div>
-        <div class="btn"><i class="fas fa-random"></i><div>Change Distributor</div></div>
-        <div class="btn"><i class="fas fa-map-marker-alt"></i><div>Distributor Locator</div></div>
-        <div class="btn"><i class="fas fa-question-circle"></i><div>FAQ</div></div>
-        <div class="btn"><i class="fas fa-cogs"></i><div>Gas Selection</div></div>
-        <div class="btn"><i class="fas fa-user-plus"></i><div>New Order Staff</div></div>
-        <div class="btn"><i class="fas fa-shield-alt"></i><div>Change Ownership</div></div>
+        <div class="btn" onclick="location.href='login.html'">
+          🔐<br>Login
+        </div>
+
+        <div class="btn" onclick="location.href='register.html'">
+          📝<br>Register
+        </div>
+
+        <div class="btn" onclick="location.href='customer-dashboard.html'">
+          👤<br>Customer Panel
+        </div>
+
+        <div class="btn" onclick="location.href='distributor-dashboard.html'">
+          🚚<br>Distributor Panel
+        </div>
+
+        <div class="btn" onclick="location.href='admin-dashboard.html'">
+          🛠️<br>Admin Panel
+        </div>
 
       </div>
     </div>
@@ -578,6 +593,10 @@
       });
     });
   </script>
+
+  <div style="text-align:center; padding:10px; background:#eee; margin-top:20px;">
+    © 2026 LPGChain | Developed for Smart Gas Tracking System
+  </div>
 
 </body>
 </html>

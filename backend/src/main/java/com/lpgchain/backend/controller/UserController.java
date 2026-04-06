@@ -5,8 +5,6 @@ import com.lpgchain.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
-
 @RestController
 @RequestMapping("/api/users")
 @CrossOrigin(origins = "*")
@@ -15,37 +13,43 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    // CUSTOMER REGISTER
+    // =========================
+    // REGISTER USER
+    // =========================
     @PostMapping("/register")
     public String registerUser(@RequestBody User user) {
-        user.setRole("CUSTOMER");
+
+        // Check if user already exists
+        User existingUser = userRepository.findByEmail(user.getEmail());
+        if (existingUser != null) {
+            return "Email already registered!";
+        }
+
+        // Save user
         userRepository.save(user);
-        return "Customer account created successfully!";
+        return "User registered successfully!";
     }
 
-    // LOGIN
+    // =========================
+    // LOGIN USER
+    // =========================
     @PostMapping("/login")
-    public String loginUser(@RequestBody User loginData) {
-        Optional<User> userOptional = userRepository.findByEmail(loginData.getEmail());
+    public String loginUser(@RequestBody User user) {
 
-        if (userOptional.isPresent()) {
-            User user = userOptional.get();
+        User existingUser = userRepository.findByEmail(user.getEmail());
 
-            if (user.getPassword().equals(loginData.getPassword())) {
-                return "Login successful! Role: " + user.getRole();
-            } else {
-                return "Invalid password!";
-            }
-        } else {
+        if (existingUser == null) {
             return "User not found!";
         }
-    }
 
-    // ADMIN ADDS DISTRIBUTOR
-    @PostMapping("/add-distributor")
-    public String addDistributor(@RequestBody User user) {
-        user.setRole("DISTRIBUTOR");
-        userRepository.save(user);
-        return "Distributor added successfully!";
+        if (!existingUser.getPassword().equals(user.getPassword())) {
+            return "Invalid password!";
+        }
+
+        if (!existingUser.getRole().equalsIgnoreCase(user.getRole())) {
+            return "Invalid role!";
+        }
+
+        return "Login successful!";
     }
 }

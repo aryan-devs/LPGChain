@@ -88,15 +88,25 @@
 </div>
 
 <script>
-document.getElementById("statusForm").addEventListener("submit", function(e) {
+document.getElementById("statusForm").addEventListener("submit", async function(e) {
   e.preventDefault();
 
   const orderId = document.getElementById("orderId").value;
   const status = document.getElementById("status").value;
 
-  alert("Status updated successfully for Order ID: " + orderId + " → " + status);
+  try {
+    const response = await fetch(`http://localhost:8080/api/bookings/update-status/${orderId}?status=${encodeURIComponent(status)}`, {
+      method: "PUT"
+    });
 
-  document.getElementById("statusForm").reset();
+    const result = await response.text();
+    alert(result);
+    document.getElementById("statusForm").reset();
+
+  } catch (error) {
+    alert("Error updating status!");
+    console.error(error);
+  }
 });
 </script>
 

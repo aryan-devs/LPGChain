@@ -72,9 +72,10 @@
     <input type="text" id="name" placeholder="Customer Name" required>
     <input type="text" id="address" placeholder="Delivery Address" required>
 
-    <select id="type">
-      <option>Domestic</option>
-      <option>Commercial</option>
+    <select id="type" required>
+      <option value="">Select Cylinder Type</option>
+      <option value="Domestic LPG">Domestic LPG</option>
+      <option value="Commercial LPG">Commercial LPG</option>
     </select>
 
     <button type="submit">Book Now</button>
@@ -86,35 +87,34 @@
 </div>
 
 <script>
-document.getElementById("bookingForm").addEventListener("submit", async function(e) {
-  e.preventDefault();
+  document.getElementById("bookingForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
 
-  const bookingData = {
-    name: document.getElementById("name").value,
-    address: document.getElementById("address").value,
-    type: document.getElementById("type").value,
-    status: "Booked"
-  };
+    const bookingData = {
+      name: document.getElementById("name").value,
+      address: document.getElementById("address").value,
+      type: document.getElementById("type").value,
+      status: "Booked"
+    };
 
-  try {
-    const response = await fetch("http://localhost:8080/api/bookings", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(bookingData)
-    });
+    try {
+      const response = await fetch("http://localhost:8080/api/bookings/create", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(bookingData)
+      });
 
-    const result = await response.text();
-    alert(result);
+      const result = await response.text();
+      alert(result);
 
-    document.getElementById("bookingForm").reset();
-
-  } catch (error) {
-    alert("Backend not connected yet (normal)");
-    console.log(bookingData);
-  }
-});
+      document.getElementById("bookingForm").reset();
+    } catch (error) {
+      alert("Error connecting to backend!");
+      console.error(error);
+    }
+  });
 </script>
 
 </body>

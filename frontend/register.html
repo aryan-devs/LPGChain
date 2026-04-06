@@ -10,6 +10,11 @@
 </head>
 
 <body>
+
+  <div style="background:#0b2c5c; color:white; padding:10px; text-align:center; font-weight:bold;">
+    LPGChain - Smart LPG Distribution System
+  </div>
+
     <div class="container">
         <div class="login-box">
             <h1>Create Customer Account</h1>
@@ -56,23 +61,16 @@
     </div>
 
     <script>
-        function togglePassword(id) {
-            const input = document.getElementById(id);
-            input.type = input.type === "password" ? "text" : "password";
-        }
-    </script>
-
-    <script>
-        const form = document.getElementById("registerForm");
+        const form = document.querySelector("form");
 
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
 
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
-            const confirmPassword = document.getElementById("confirmPassword").value;
-            const area = document.getElementById("area").value;
+            const name = document.querySelector("#name").value;
+            const email = document.querySelector("#email").value;
+            const password = document.querySelector("#password").value;
+            const confirmPassword = document.querySelector("#confirmPassword").value;
+            const area = document.querySelector("#area").value;
 
             if (password !== confirmPassword) {
                 alert("Passwords do not match!");
@@ -83,7 +81,7 @@
                 name: name,
                 email: email,
                 password: password,
-                area: area
+                role: "CUSTOMER"
             };
 
             try {
@@ -99,16 +97,25 @@
                 alert(result);
 
                 if (result.includes("successfully")) {
-                    form.reset();
                     window.location.href = "login.html";
                 }
 
+                form.reset();
             } catch (error) {
                 alert("Error connecting to backend!");
                 console.error(error);
             }
         });
+
+        function togglePassword(id) {
+            const input = document.getElementById(id);
+            input.type = input.type === "password" ? "text" : "password";
+        }
     </script>
+
+  <div style="text-align:center; padding:10px; background:#eee; margin-top:20px;">
+    © 2026 LPGChain | Developed for Smart Gas Tracking System
+  </div>
 
 </body>
 
