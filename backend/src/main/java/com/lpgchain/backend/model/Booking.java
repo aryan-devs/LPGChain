@@ -13,15 +13,17 @@ public class Booking {
     private String name;
     private String address;
     private String type;
+    private String distributor;
     private String status;
 
     public Booking() {
     }
 
-    public Booking(String name, String address, String type, String status) {
+    public Booking(String name, String address, String type, String distributor, String status) {
         this.name = name;
         this.address = address;
         this.type = type;
+        this.distributor = distributor;
         this.status = status;
     }
 
@@ -51,6 +53,14 @@ public class Booking {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getDistributor() {
+        return distributor;
+    }
+
+    public void setDistributor(String distributor) {
+        this.distributor = distributor;
     }
 
     public String getStatus() {

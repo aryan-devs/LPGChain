@@ -70,15 +70,15 @@
 
   <form id="bookingForm">
     <input type="text" id="name" placeholder="Enter Full Name" required>
-    
-    <select id="area" required onchange="loadDistributor()">
-      <option value="">Select Area</option>
-    </select>
 
+    <input type="text" id="address" placeholder="Enter Full Address" required>
     <input type="text" id="distributor" placeholder="Assigned Distributor" readonly>
+    <p style="font-size: 13px; color: #666; margin-top: -4px; margin-bottom: 10px;">Distributor is auto-selected based on your delivery address.</p>
 
     <select id="type" required>
       <option value="">Select Cylinder Type</option>
+      <option value="Domestic">Domestic</option>
+      <option value="Commercial">Commercial</option>
     </select>
 
     <button type="submit">Book Now</button>
@@ -90,66 +90,35 @@
 </div>
 
 <script>
-  // Load areas on page load
-  async function loadAreas() {
-    try {
-      const response = await fetch("http://localhost:8080/api/bookings/areas");
-      const areas = await response.json();
+  // Infer distributor from free-form address input
+  async function inferDistributor() {
+    const address = document.getElementById("address").value.trim().toLowerCase();
+    const distributorInput = document.getElementById("distributor");
+    const knownAreas = ["wakad", "baner", "kharadi", "pimpri", "hinjewadi", "wakad", "pune", "lohegaon"];
 
-      const areaSelect = document.getElementById("area");
-      areas.forEach(area => {
-        const option = document.createElement("option");
-        option.value = area.name;
-        option.textContent = area.name;
-        areaSelect.appendChild(option);
-      });
-    } catch (error) {
-      console.error("Error loading areas:", error);
+    if (!address) {
+      distributorInput.value = "";
+      return;
     }
-  }
 
-  // Load cylinder types on page load
-  async function loadCylinderTypes() {
-    try {
-      const response = await fetch("http://localhost:8080/api/bookings/cylinder-types");
-      const types = await response.json();
-
-      const typeSelect = document.getElementById("type");
-      types.forEach(type => {
-        const option = document.createElement("option");
-        option.value = type.name;
-        option.textContent = type.name;
-        typeSelect.appendChild(option);
-      });
-    } catch (error) {
-      console.error("Error loading cylinder types:", error);
-    }
-  }
-
-  // Load distributor based on selected area
-  async function loadDistributor() {
-    const area = document.getElementById("area").value;
-    
-    if (!area) {
-      document.getElementById("distributor").value = "";
+    const matchedArea = knownAreas.find(area => address.includes(area));
+    if (!matchedArea) {
+      distributorInput.value = "Auto assign after booking";
       return;
     }
 
     try {
-      const response = await fetch(`http://localhost:8080/api/bookings/distributor/${area}`);
-      const distributor = await response.json();
-      document.getElementById("distributor").value = distributor.name;
+      const response = await fetch(`http://localhost:8080/api/bookings/distributor/${encodeURIComponent(matchedArea)}`);
+      const distributor = await response.text();
+      distributorInput.value = distributor;
     } catch (error) {
-      console.error("Error loading distributor:", error);
-      document.getElementById("distributor").value = "Error loading distributor";
+      console.error("Error fetching distributor:", error);
+      distributorInput.value = "Auto assign after booking";
     }
   }
 
-  // Load areas and types when page loads
-  window.addEventListener("load", function() {
-    loadAreas();
-    loadCylinderTypes();
-  });
+  document.getElementById("address").addEventListener("blur", inferDistributor);
+  document.getElementById("address").addEventListener("input", inferDistributor);
 
   // Handle form submission
   document.getElementById("bookingForm").addEventListener("submit", async function(e) {
@@ -157,8 +126,9 @@
 
     const bookingData = {
       name: document.getElementById("name").value,
-      address: document.getElementById("area").value,
+      address: document.getElementById("address").value,
       type: document.getElementById("type").value,
+      distributor: document.getElementById("distributor").value,
       status: "Booked"
     };
 
@@ -175,7 +145,6 @@
       alert(result);
 
       document.getElementById("bookingForm").reset();
-      document.getElementById("distributor").value = "";
     } catch (error) {
       alert("Error connecting to backend!");
       console.error(error);

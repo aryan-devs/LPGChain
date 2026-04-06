@@ -190,13 +190,18 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #333;
       opacity: 0;
       transition: opacity 1s ease-in-out;
+      filter: brightness(85%);
     }
 
     .slide.active {
       opacity: 1;
+      z-index: 5;
     }
 
     .dots {
@@ -420,11 +425,10 @@
 
   <!-- NAVBAR -->
   <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">Distributor Dashboard</a>
-    <a href="#">Customer Dashboard</a>
-    <a href="#">Admin Dashboard</a>
-
+      <a href="index.html">Home</a>
+      <a href="distributor-dashboard.html">Distributor Dashboard</a>
+      <a href="customer-dashboard.html">Customer Dashboard</a>
+      <a href="admin-dashboard.html">Admin Dashboard</a>
     <div class="help-menu">
       <a href="#">Help</a>
       <div class="submenu">
@@ -439,11 +443,12 @@
   <!-- SLIDER -->
   <div class="slider">
     <div class="slides">
-      <img src="https://images.unsplash.com/photo-1581092919535-7146ff1a590b?q=80&w=1600&auto=format&fit=crop" class="slide active" alt="slide1">
-      <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1600&auto=format&fit=crop" class="slide" alt="slide2">
-      <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop" class="slide" alt="slide3">
-    </div>
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1581090700227-1e8c4b2b7c9b');"></div>
 
+<div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1509395176047-4a66953fd231');"></div>
+
+<div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1581092919534-9c6c9f8e7b7c');"></div>
+    </div>
     <div class="dots">
       <span class="dot active" onclick="currentSlide(0)"></span>
       <span class="dot" onclick="currentSlide(1)"></span>
@@ -589,12 +594,6 @@
       }
     }
 
-    // QUICK ACCESS BUTTONS
-    document.querySelectorAll('.btn').forEach((btn) => {
-      btn.addEventListener('click', function() {
-        alert("This feature will be connected next!");
-      });
-    });
   </script>
 
   <div style="text-align:center; padding:10px; background:#eee; margin-top:20px;">
