@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LPGChain Login</title>
+  <title>Login - LPGChain</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
   <div class="container">
     <div class="login-box">
-      <h1>LPGChain</h1>
-      <p>Transparent LPG Distribution System</p>
+      <h1>Login to LPGChain</h1>
+      <p>Enter your account details</p>
 
-      <form onsubmit="handleLogin(event)">
-        <input type="email" placeholder="Enter Email" required />
-<div style="position: relative;">
-  <input 
-    type="password" 
-    id="loginPassword" 
-    placeholder="Enter Password" 
-    required 
-    style="width: 100%; padding-right: 50px;"
-    oncopy="return false" 
-    oncut="return false" 
-    onpaste="return false"
-  />
-  <span onclick="toggleLoginPassword()" 
-        style="position: absolute; right: 15px; top: 14px; cursor: pointer;">
-        👁️
-  </span>
-</div>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email Address" required />
+
+        <div style="position: relative;">
+          <input type="password" id="password" placeholder="Password" required style="width: 100%; padding-right: 50px;"
+            oncopy="return false" oncut="return false" onpaste="return false" />
+          <span onclick="togglePassword()"
+            style="position: absolute; right: 15px; top: 14px; cursor: pointer; font-size: 18px;">
+            👁
+          </span>
+        </div>
+
         <select id="role" required>
           <option value="">Select Role</option>
-          <option value="admin">Admin</option>
-          <option value="distributor">Distributor</option>
-          <option value="customer">Customer</option>
+          <option value="CUSTOMER">Customer</option>
+          <option value="DISTRIBUTOR">Distributor</option>
+          <option value="ADMIN">Admin</option>
         </select>
 
         <button type="submit">Login</button>
       </form>
 
       <p style="margin-top: 15px; font-size: 14px;">
-        New Customer? <a href="register.html">Create Account</a>
+        Don't have an account? <a href="register.html">Create Account</a>
       </p>
     </div>
   </div>
 
   <script>
-    function handleLogin(event) {
-      event.preventDefault();
-
-      const role = document.getElementById("role").value;
-
-      if (role === "admin") {
-        window.location.href = "admin.html";
-      } else if (role === "distributor") {
-        window.location.href = "distributor.html";
-      } else if (role === "customer") {
-        window.location.href = "customer.html";
-      } else {
-        alert("Please select a role");
-      }
+    function togglePassword() {
+      const passwordField = document.getElementById("password");
+      passwordField.type = passwordField.type === "password" ? "text" : "password";
     }
 
-    function toggleLoginPassword() {
-  const passwordField = document.getElementById("loginPassword");
-  passwordField.type = passwordField.type === "password" ? "text" : "password";
-}
+    document.getElementById("loginForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const role = document.getElementById("role").value;
+
+      const loginData = {
+        email: email,
+        password: password,
+        role: role
+      };
+
+      try {
+        const response = await fetch("http://localhost:8080/api/users/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(loginData)
+        });
+
+        const result = await response.text();
+
+        if (response.ok) {
+          alert(result);
+
+          if (role === "CUSTOMER") {
+            window.location.href = "customer-dashboard.html";
+          } else if (role === "DISTRIBUTOR") {
+            window.location.href = "distributor-dashboard.html";
+          } else if (role === "ADMIN") {
+            window.location.href = "admin-dashboard.html";
+          }
+
+        } else {
+          alert(result);
+        }
+
+      } catch (error) {
+        alert("Error connecting to backend!");
+        console.error(error);
+      }
+    });
   </script>
+
 </body>
+
 </html>

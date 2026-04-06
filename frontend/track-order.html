@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track Order - LPGChain</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #0b2c5c, #1e4d91);
+      color: white;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      color: black;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0b2c5c;
+      margin-bottom: 25px;
+    }
+
+    .order-box {
+      background: #f8f9ff;
+      border-left: 6px solid #2f65d9;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+
+    .order-box p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .timeline {
+      margin-top: 30px;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: #d1d9f0;
+      border-radius: 10px;
+    }
+
+    .step {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 20px;
+    }
+
+    .step::before {
+      content: "";
+      position: absolute;
+      left: -28px;
+      top: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #bbb;
+      border: 3px solid white;
+      box-shadow: 0 0 0 3px #d1d9f0;
+    }
+
+    .step.active::before {
+      background: #28a745;
+      box-shadow: 0 0 0 3px #b7e4c7;
+    }
+
+    .step h4 {
+      margin: 0 0 5px;
+      color: #0b2c5c;
+    }
+
+    .step p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .back a {
+      text-decoration: none;
+      color: #0b2c5c;
+      font-weight: bold;
+    }
+
+    .status-badge {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>🚚 Track Your LPG Order</h2>
+
+    <div class="order-box">
+      <p><strong>Order ID:</strong> LPG12345</p>
+      <p><strong>Customer Name:</strong> A R</p>
+      <p><strong>Booking Date:</strong> 06 April 2026</p>
+      <p><strong>Expected Delivery:</strong> 07 April 2026</p>
+      <span class="status-badge">Dispatched</span>
+    </div>
+
+    <div class="timeline">
+      <div class="step active">
+        <h4>Order Booked</h4>
+        <p>Your LPG cylinder booking has been placed successfully.</p>
+      </div>
+
+      <div class="step active">
+        <h4>Order Confirmed</h4>
+        <p>Your booking has been confirmed by distributor.</p>
+      </div>
+
+      <div class="step active">
+        <h4>Out for Delivery</h4>
+        <p>Your cylinder is on the way to your address.</p>
+      </div>
+
+      <div class="step">
+        <h4>Delivered</h4>
+        <p>Your LPG cylinder will be marked delivered once received.</p>
+      </div>
+    </div>
+
+    <div class="back">
+      <a href="customer-dashboard.html">⬅ Back to Dashboard</a>
+    </div>
+  </div>
+
+</body>
+</html>

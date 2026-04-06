@@ -64,3 +64,55 @@ form button {
 form button:hover {
   background: #1d4ed8;
 }
+
+.section {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border-left: 5px solid #00c3ff;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.section p, .section li {
+  color: #eaeaea;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+.tracking-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tracking-step {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  color: #bbb;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #555;
+  transition: 0.3s;
+}
+
+.tracking-step.active {
+  background: #00c853;
+  color: white;
+  border-color: #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}

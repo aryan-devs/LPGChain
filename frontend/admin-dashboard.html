@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - LPGChain</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(135deg, #0b2c5c, #1e4d91);
+      color: white;
+    }
+
+    .header {
+      background: white;
+      color: #0b2c5c;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logout-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <h2>Admin Dashboard</h2>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card" onclick="location.href='add-distributor.html'">
+      ➕<br><br>
+      <b>Add Distributor</b>
+    </div>
+
+    <div class="card">
+      👥<br><br>
+      <b>View All Users</b>
+    </div>
+
+    <div class="card">
+      📊<br><br>
+      <b>System Overview</b>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function logout(){
+  alert("Logged out");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

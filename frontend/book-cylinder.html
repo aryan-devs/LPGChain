@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Cylinder - LPGChain</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: linear-gradient(135deg, #0b2c5c, #1e4d91);
+      color: white;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background: white;
+      color: black;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0b2c5c;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2f65d9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #1e4fbf;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .back a {
+      color: #0b2c5c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>📦 Book LPG Cylinder</h2>
+
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Customer Name" required>
+    <input type="text" id="address" placeholder="Delivery Address" required>
+
+    <select id="type">
+      <option>Domestic</option>
+      <option>Commercial</option>
+    </select>
+
+    <button type="submit">Book Now</button>
+  </form>
+
+  <div class="back">
+    <a href="customer-dashboard.html">⬅ Back to Dashboard</a>
+  </div>
+</div>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const bookingData = {
+    name: document.getElementById("name").value,
+    address: document.getElementById("address").value,
+    type: document.getElementById("type").value,
+    status: "Booked"
+  };
+
+  try {
+    const response = await fetch("http://localhost:8080/api/bookings", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(bookingData)
+    });
+
+    const result = await response.text();
+    alert(result);
+
+    document.getElementById("bookingForm").reset();
+
+  } catch (error) {
+    alert("Backend not connected yet (normal)");
+    console.log(bookingData);
+  }
+});
+</script>
+
+</body>
+</html>

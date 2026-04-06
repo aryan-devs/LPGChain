@@ -4,53 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customer Dashboard - LPGChain</title>
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-  <h2>LPGChain</h2>
-  <div>
-    <a href="admin.html">Admin</a>
-    <a href="distributor.html">Distributor</a>
-    <a href="customer.html">Customer</a>
-    <a href="transactions.html">Transactions</a>
-    <a href="login.html">Logout</a>
+
+<script>
+  if (localStorage.getItem("role") !== "CUSTOMER") {
+    alert("Access Denied!");
+    window.location.href = "login.html";
+  }
+</script>
+
+<div class="container">
+  <div class="login-box" style="max-width: 750px;">
+    <h1>Customer Dashboard</h1>
+    <p>Welcome to LPGChain Customer Panel</p>
+
+    <div class="section">
+      <h2>📦 Book LPG Cylinder</h2>
+      <button onclick="bookCylinder()">Book Now</button>
+    </div>
+
+    <div class="section">
+      <h2>🚚 Cylinder Tracking</h2>
+      <p id="latestStatus">Loading latest order status...</p>
+
+      <div class="tracking-container">
+        <div class="tracking-step" id="step-booked">Booked</div>
+        <div class="tracking-step" id="step-out">Out for Delivery</div>
+        <div class="tracking-step" id="step-delivered">Delivered</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📋 My Orders</h2>
+      <ul id="ordersList" style="text-align:left;">
+        <li>Loading orders...</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>👤 Account Info</h2>
+      <p>Email: <span id="userEmail"></span></p>
+    </div>
+
+    <button onclick="logout()" style="margin-top:20px; background:red;">Logout</button>
   </div>
 </div>
-  <div class="container">
-    <h1>Customer Dashboard</h1>
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Booking Status</h3>
-        <p>Pending</p>
-      </div>
-      <div class="card">
-        <h3>Distributor Stock</h3>
-        <p>80</p>
-      </div>
-      <div class="card">
-        <h3>Complaint Status</h3>
-        <p>Open</p>
-      </div>
-    </div>
+<script>
+  const email = localStorage.getItem("email");
+  document.getElementById("userEmail").innerText = email;
 
-    <div class="section">
-      <h2>Book LPG Cylinder</h2>
-      <input type="text" placeholder="Customer Name">
-      <select>
-        <option>Select Distributor</option>
-        <option>Distributor A</option>
-        <option>Distributor B</option>
-      </select>
-      <button>Book Now</button>
-    </div>
+  async function bookCylinder() {
+    const address = prompt("Enter delivery address:");
 
-    <div class="section">
-      <h2>Raise Complaint</h2>
-      <textarea rows="4" placeholder="Write your complaint here..."></textarea>
-      <button>Submit Complaint</button>
-    </div>
-  </div>
+    if (!address) {
+      alert("Address is required!");
+      return;
+    }
+
+    const orderData = {
+      customerEmail: email,
+      address: address
+    };
+
+    try {
+      const response = await fetch("http://localhost:8080/api/orders/book", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(orderData)
+      });
+
+      const result = await response.text();
+      alert(result);
+      loadOrders();
+
+    } catch (error) {
+      alert("Booking failed!");
+      console.error(error);
+    }
+  }
+
+  async function loadOrders() {
+    try {
+      const response = await fetch(`http://localhost:8080/api/orders/${email}`);
+      const orders = await response.json();
+
+      const ordersList = document.getElementById("ordersList");
+      const latestStatus = document.getElementById("latestStatus");
+
+      ordersList.innerHTML = "";
+
+      if (orders.length === 0) {
+        ordersList.innerHTML = "<li>No orders found.</li>";
+        latestStatus.innerText = "No active order.";
+        return;
+      }
+
+      orders.forEach(order => {
+        const li = document.createElement("li");
+        li.innerText = `Order #${order.id} - ${order.status} - ${order.address}`;
+        ordersList.appendChild(li);
+      });
+
+      const latestOrder = orders[orders.length - 1];
+      latestStatus.innerText = `Order #${latestOrder.id} is currently: ${latestOrder.status}`;
+
+      // Reset tracking styles
+      document.getElementById("step-booked").classList.remove("active");
+      document.getElementById("step-out").classList.remove("active");
+      document.getElementById("step-delivered").classList.remove("active");
+
+      // Activate tracking based on status
+      if (latestOrder.status === "Booked") {
+        document.getElementById("step-booked").classList.add("active");
+      }
+      else if (latestOrder.status === "Out for Delivery") {
+        document.getElementById("step-booked").classList.add("active");
+        document.getElementById("step-out").classList.add("active");
+      }
+      else if (latestOrder.status === "Delivered") {
+        document.getElementById("step-booked").classList.add("active");
+        document.getElementById("step-out").classList.add("active");
+        document.getElementById("step-delivered").classList.add("active");
+      }
+
+    } catch (error) {
+      console.error("Error loading orders:", error);
+      document.getElementById("ordersList").innerHTML = "<li>Error loading orders.</li>";
+      document.getElementById("latestStatus").innerText = "Unable to fetch order status.";
+    }
+  }
+
+  function logout() {
+    localStorage.removeItem("role");
+    localStorage.removeItem("email");
+    window.location.href = "login.html";
+  }
+
+  loadOrders();
+</script>
+
 </body>
 </html>

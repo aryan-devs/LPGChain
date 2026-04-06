@@ -4,84 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard - LPGChain</title>
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-  <h2>LPGChain</h2>
-  <div>
-    <a href="admin.html">Admin</a>
-    <a href="distributor.html">Distributor</a>
-    <a href="customer.html">Customer</a>
-    <a href="transactions.html">Transactions</a>
-    <a href="login.html">Logout</a>
+
+<script>
+  if (localStorage.getItem("role") !== "ADMIN") {
+    alert("Access Denied!");
+    window.location.href = "login.html";
+  }
+</script>
+
+<div class="container">
+  <div class="login-box" style="max-width: 800px;">
+    <h1>Admin Dashboard</h1>
+    <p>Monitor LPGChain System</p>
+
+    <div class="section">
+      <h2>📊 System Overview</h2>
+      <p>Total Customers: 120</p>
+      <p>Total Distributors: 8</p>
+      <p>Total Orders Today: 34</p>
+    </div>
+
+    <div class="section">
+      <h2>⚠️ Fraud Alert</h2>
+      <p>Distributor A has mismatch of 50 cylinders.</p>
+    </div>
+
+    <div class="section">
+      <h2>➕ Add Distributor</h2>
+      <button onclick="alert('Distributor adding feature coming next!')">Add New Distributor</button>
+    </div>
+
+    <div class="section">
+      <h2>🧾 Recent Activity</h2>
+      <ul style="text-align:left;">
+        <li>Customer #102 booked cylinder</li>
+        <li>Distributor B updated stock</li>
+        <li>Fraud alert generated</li>
+      </ul>
+    </div>
+
+    <button onclick="logout()" style="margin-top:20px; background:red;">Logout</button>
   </div>
 </div>
-  <div class="container">
-   <h1>Admin Dashboard</h1>
-<p style="color: gray; margin-bottom: 20px;">
-  Monitor LPG distribution, allocate stock, and detect fraud activity
-</p>
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Total Distributors</h3>
-        <p>12</p>
-      </div>
-      <div class="card">
-        <h3>Total Cylinders Allocated</h3>
-        <p>5000</p>
-      </div>
-      <div class="card">
-        <h3>Fraud Alerts</h3>
-        <p>2</p>
-      </div>
-    </div>
+<script>
+  function logout() {
+    localStorage.removeItem("role");
+    window.location.href = "login.html";
+  }
+</script>
 
-   <div class="section alert-box">
-  <h2>⚠️ Fraud Alert Detected</h2>
-  <p><strong>Distributor A</strong> has a mismatch of <strong>50 cylinders</strong>.</p>
-</div>
-
-    <div class="section">
-      <h2>Add Distributor</h2>
-      <input type="text" placeholder="Distributor Name">
-      <input type="text" placeholder="Area">
-      <input type="text" placeholder="Contact Number">
-      <button>Add Distributor</button>
-    </div>
-
-    <div class="section">
-      <h2>Allocate LPG Stock</h2>
-      <select>
-        <option>Select Distributor</option>
-        <option>Distributor A</option>
-        <option>Distributor B</option>
-      </select>
-      <input type="number" placeholder="Number of Cylinders">
-      <button>Allocate Stock</button>
-    </div>
-
-    <div class="section">
-      <h2>Recent Transactions</h2>
-      <table>
-        <tr>
-          <th>Transaction</th>
-          <th>Quantity</th>
-          <th>Time</th>
-        </tr>
-        <tr>
-          <td>Company → Distributor A</td>
-          <td>500</td>
-          <td>10:30 AM</td>
-        </tr>
-        <tr>
-          <td>Company → Distributor B</td>
-          <td>300</td>
-          <td>11:15 AM</td>
-        </tr>
-      </table>
-    </div>
-  </div>
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Delivery Status - LPGChain</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: linear-gradient(135deg, #0b2c5c, #1e4d91);
+      color: white;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background: white;
+      color: black;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0b2c5c;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2f65d9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #1e4fbf;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .back a {
+      color: #0b2c5c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>🚚 Update Delivery Status</h2>
+
+  <form id="statusForm">
+    <input type="text" id="orderId" placeholder="Enter Order ID" required>
+
+    <select id="status" required>
+      <option value="">Select Status</option>
+      <option value="Booked">Booked</option>
+      <option value="Confirmed">Confirmed</option>
+      <option value="Out for Delivery">Out for Delivery</option>
+      <option value="Delivered">Delivered</option>
+    </select>
+
+    <button type="submit">Update Status</button>
+  </form>
+
+  <div class="back">
+    <a href="distributor-dashboard.html">⬅ Back to Dashboard</a>
+  </div>
+</div>
+
+<script>
+document.getElementById("statusForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const orderId = document.getElementById("orderId").value;
+  const status = document.getElementById("status").value;
+
+  alert("Status updated successfully for Order ID: " + orderId + " → " + status);
+
+  document.getElementById("statusForm").reset();
+});
+</script>
+
+</body>
+</html>
